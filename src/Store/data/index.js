@@ -61,30 +61,72 @@ Data.createLinksByYear = function (data, places_data) {
 
 Data.createLinksByYearSubRegions = function (data, places_data) {
   const origins_keys = data.columns.slice(8),
-    links_by_year = {};
-
-  for (let i = 0; i < data.length; i++) {
-    const datum = data[i],
-      year = datum.Year,
-      destination = datum.destination,
-      destination_data = places_data[destination],
-      origins = origins_keys.filter(d => +datum[d] > 0);
-
-    for (let j = 0; j < origins.length; j++) {
-      const origin = origins[j],
-        origin_data = places_data[origin]
-      if (!links_by_year.hasOwnProperty(year)) links_by_year[year] = [];
-      if (links_by_year[year].some(d => {
-        return d.source.sub_region === origin_data.sub_region && d.target.sub_region === destination_data.sub_region
-      })) continue
-      links_by_year[year].push({
-        source: origin_data,
-        target: destination_data
-      })
-    }
-
-  }
+    links_by_year_sub_to_sub = getLinksByYearSubToSub(),
+    links_by_year = chooseTopNFromSubRegion(links_by_year_sub_to_sub, 2, 100);
+  console.log(links_by_year)
   return links_by_year
+
+  
+  function getLinksByYearSubToSub() {
+    const links_by_year_sub_to_sub = {}
+    for (let i = 0; i < data.length; i++) {
+      const datum = data[i],
+        year = datum.Year,
+        destination = datum.destination,
+        destination_data = places_data[destination],
+        origins = origins_keys.filter(d => +datum[d] > 0);
+
+      for (let j = 0; j < origins.length; j++) {
+        const origin = origins[j],
+          origin_data = places_data[origin],
+          sub_to_sub_key = origin_data.sub_region + "\t" + destination_data.sub_region;
+        if (!links_by_year_sub_to_sub.hasOwnProperty(year)) links_by_year_sub_to_sub[year] = {};
+        if (!links_by_year_sub_to_sub[year][sub_to_sub_key]) links_by_year_sub_to_sub[year][sub_to_sub_key] = [];
+        links_by_year_sub_to_sub[year][sub_to_sub_key].push({
+          value: +datum[origin],
+          source: origin_data,
+          target: destination_data
+        })
+      }
+
+    }
+    console.log(links_by_year_sub_to_sub)
+    return links_by_year_sub_to_sub
+  }
+
+  // TODO: check place data long/lat from google
+  function chooseTopNFromSubRegion(links_by_year_sub_to_sub, n, n_year) {
+    let links_by_year = {}
+    for (let year in links_by_year_sub_to_sub) {
+      if (!links_by_year_sub_to_sub.hasOwnProperty(year)) continue
+      links_by_year[year] = []
+      const links_year = links_by_year_sub_to_sub[year];
+      for (let sub_to_sub_key in links_year) {
+        if (!links_year.hasOwnProperty(sub_to_sub_key)) continue
+        const sub_to_sub_links = links_year[sub_to_sub_key];
+        const top_links = sub_to_sub_links.sort((a, b) => b.value - a.value).slice(0, n)
+        links_by_year[year].push(...top_links)
+      }
+    }
+    if (n_year) links_by_year = chooseTopLinksByYear(links_by_year, n_year)
+    return links_by_year
+  }
+  function chooseTopLinksByYear(links_by_year, n) {
+    for (let year in links_by_year) {
+      if (!links_by_year.hasOwnProperty(year)) continue
+      links_by_year[year] = links_by_year[year].filter(filterNotUsedLinks)
+      links_by_year[year].sort((a, b) => b.value - a.value)
+      links_by_year[year] = links_by_year[year].slice(0, n)
+    }
+    return links_by_year
+  }
+
+  function filterNotUsedLinks(d) {
+    if (d.source.geo_region === "Africa" && d.target.geo_region === "Europe") return true
+    else if (d.source.geo_region !== "Europe" && d.target.geo_region === "Europe") return true
+    else if (d.source.geo_region === "Africa" && d.target.geo_region === "Africa") return true
+    else return false
+  }
 }
 
 Data.getWorldMapGeoJson = async function () {
