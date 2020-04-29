@@ -12,7 +12,7 @@ Store.prototype.getData = async function () {
   self.data = await Data.loadMigrations();
   self.places_data = await Data.loadPlacesData();
   self.world_map_geojson = await Data.getWorldMapGeoJson();
-  self.links_by_year = Data.createLinksByYear(self.data, self.places_data);
+  self.links_by_year = Data.createLinksByYearSubRegions(self.data, self.places_data);
   self.data_by_years_and_categories = Data.createTotalByYearsAndCategories(self.data, self.places_data);
 }
 

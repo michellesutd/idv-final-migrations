@@ -59,6 +59,34 @@ Data.createLinksByYear = function (data, places_data) {
   return links_by_year
 }
 
+Data.createLinksByYearSubRegions = function (data, places_data) {
+  const origins_keys = data.columns.slice(8),
+    links_by_year = {};
+
+  for (let i = 0; i < data.length; i++) {
+    const datum = data[i],
+      year = datum.Year,
+      destination = datum.destination,
+      destination_data = places_data[destination],
+      origins = origins_keys.filter(d => +datum[d] > 0);
+
+    for (let j = 0; j < origins.length; j++) {
+      const origin = origins[j],
+        origin_data = places_data[origin]
+      if (!links_by_year.hasOwnProperty(year)) links_by_year[year] = [];
+      if (links_by_year[year].some(d => {
+        return d.source.sub_region === origin_data.sub_region && d.target.sub_region === destination_data.sub_region
+      })) continue
+      links_by_year[year].push({
+        source: origin_data,
+        target: destination_data
+      })
+    }
+
+  }
+  return links_by_year
+}
+
 Data.getWorldMapGeoJson = async function () {
   let world_map_url = "./data/world.50.geo.json",
     world_map_geo_json = await fetch(world_map_url).then(resp => resp.json());
@@ -127,4 +155,5 @@ function group(data, classGetter) {
     dct[k].push(v)
   }
 }
+
 
