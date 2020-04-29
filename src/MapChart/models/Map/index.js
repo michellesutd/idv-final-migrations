@@ -31,19 +31,13 @@ Map.prototype.draw = function () {
   const ctx = self.ctx,
     dim = self.dim,
     data = self.store.data,
-    projection = self.d3_projection,
-    geoPath = d3.geoPath().projection(projection)
-    geoPath.context(ctx);
+    projection = self.d3_projection
 
   ctx.clearRect(0,0,dim.width, dim.height)
-  self.ctx2.clearRect(0,0,dim.width, dim.height)
-  MapChart.polygons.drawMultiple(self.world_map_geojson.features, d => d, ctx, geoPath, Style.world_map_bg)
-  Render.drawLinks(self.store.links_by_year, self.ctx2, projection, Style.links)
-  // MapChart.points.drawMultiple(data, ctx, d => ([d.Long, d.Lat]), projection, Style.points)
+  MapChart.polygons.drawMultiple(self.world_map_geojson.features, d => d, ctx, projection, Style.world_map_bg)
 
+  Data.calculateLinksLength(self.store.links_by_year, projection)
+  self.ctx2.clearRect(0,0,dim.width, dim.height)
+  Render.drawLinks(self.store.links_by_year, self.ctx2, projection, Style.links)
 
 }
-
-
-
-
