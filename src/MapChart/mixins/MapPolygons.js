@@ -1,4 +1,7 @@
-function drawMultiple(data, geomGetter, ctx, geoPath, style) {
+function drawMultiple(data, geomGetter, ctx, projection, style) {
+    const geoPath = d3.geoPath().projection(projection);
+    geoPath.context(ctx)
+  
     for (let i = 0; i < data.length; i++) {
       const geo = geomGetter(data[i]);
       if (!geo) continue;
