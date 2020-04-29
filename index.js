@@ -2,8 +2,10 @@ import Store from "./src/Store/index.js"
 import Map from "./src/MapChart/models/Map/index.js"
 
 const store = new Store();
-
 store.event.on("update", store.update.bind(store));
+store.event.on("updateSelectedYear", store.updateSelectedYear.bind(store));
+
+console.log(gsap);
 
 (async () => {
   await store.getData();

@@ -4,7 +4,7 @@ import Data from "./data/index.js"
 export default function Store() {
   const self = this;
   self.event = new Event();
-  self.methods = {};
+  self.selected_year = "1990"
 }
 
 Store.prototype.getData = async function () {
@@ -23,4 +23,10 @@ Store.prototype.structureData = function () {
 Store.prototype.update = function() {
   const self = this;
 
+}
+
+Store.prototype.updateSelectedYear = function(year) {
+  const self = this;
+
+  self.selected_year = year
 }

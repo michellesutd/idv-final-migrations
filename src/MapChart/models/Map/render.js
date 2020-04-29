@@ -1,24 +1,26 @@
 const Render = {};
 export default Render;
 
-Render.drawLinks = function (links_by_year, ctx, projection, style) {
-  const geoPath = d3.geoPath().projection(projection);
+Render.drawLinks = function (trans_point, links, ctx, projection, style) {
+  const geoPath = d3.geoPath().projection(projection)
   geoPath.context(ctx)
-  const years = Object.keys(links_by_year);
-  console.log(links_by_year)
 
-  const data_year = links_by_year[years[0]];
-  const start = new Date().getTime()
-  for (let i = 0; i < data_year.length; i++) {
-    const d = data_year[i];
-    if (d.source.geo_region !== "Africa" || d.target.geo_region !== "Europe") continue
+  const start = new Date().getTime();
+  for (let i = 0; i < links.length; i++) {
+    const d = links[i];
+    let color;
+    if (d.source.geo_region === "Africa" && d.target.geo_region === "Europe") color = style.colors["afr_to_eu"]
+    else if (d.target.geo_region === "Europe") color = style.colors["other_to_eu"]
+    else if (d.source.geo_region === "Africa" && d.target.geo_region === "Africa") color = style.colors["afr_to_afr"]
+    else continue
 
     ctx.beginPath();
     ctx.lineWidth = style["stroke-width"];
-    ctx.strokeStyle = style.color;
-    ctx.setLineDash([d.total_length, d.total_length]);
+    ctx.strokeStyle = color;
+    ctx.setLineDash([d.total_length * trans_point, d.total_length]);
     geoPath({type: "LineString", coordinates: [d.source.coor, d.target.coor] })
     ctx.stroke();
   }
-  console.log("done: " + (new Date().getTime() - start) + " ms")
+  const took = new Date().getTime() - start;
+  // console.log("took: " + took + " ms")
 }
