@@ -1,0 +1,178 @@
+{
+  "Southern Asia": {
+    "place": "Southern Asia",
+    "coor": [
+      14.7506062,60.6394792
+    ],
+    "geo_region": "Asia",
+    "sub_region": "Southern Asia"
+  },
+  "Southern Europe": {
+    "place": "Southern Europe",
+    "coor": [
+      36.9544898,-9.8954337
+    ],
+    "geo_region": "Europe",
+    "sub_region": "Southern Europe"
+  },
+  "Northern Africa": {
+    "place": "Northern Africa",
+    "coor": [
+      20.2794616,1.5965359
+    ],
+    "geo_region": "Africa",
+    "sub_region": "Northern Africa"
+  },
+  "Polynesia": {
+    "place": "Polynesia",
+    "coor": [
+      -9.4410328,147.0391571
+    ],
+    "geo_region": "Ocenia",
+    "sub_region": "Polynesia"
+  },
+  "Middle Africa": {
+    "place": "Middle Africa",
+    "coor": [
+      2.5671421,0.0406007
+    ],
+    "geo_region": "Africa",
+    "sub_region": "Middle Africa"
+  },
+  "Caribbean": {
+    "place": "Caribbean",
+    "coor": [
+      18.5748701,-76.7884599
+    ],
+    "geo_region": "Latin America and the Caribbean",
+    "sub_region": "Caribbean"
+  },
+  "South America": {
+    "place": "South America",
+    "coor": [
+      -15.7121541,-100.4742143
+    ],
+    "geo_region": "Latin America and the Caribbean",
+    "sub_region": "South America"
+  },
+  "Western Asia": {
+    "place": "Western Asia",
+    "coor": [
+      22.2898542,54.1511134
+    ],
+    "geo_region": "Asia",
+    "sub_region": "Western Asia"
+  },
+  "Australia / New Zealand": {
+    "place": "Australia / New Zealand",
+    "coor": [
+      -25.0324304,115.2250766
+    ],
+    "geo_region": "Ocenia",
+    "sub_region": "Australia / New Zealand"
+  },
+  "Western Europe": {
+    "place": "Western Europe",
+    "coor": [
+      42.7872455,-16.6775408
+    ],
+    "geo_region": "Europe",
+    "sub_region": "Western Europe"
+  },
+  "Eastern Europe": {
+    "place": "Eastern Europe",
+    "coor": [
+      56.9610318,7.1277966
+    ],
+    "geo_region": "Europe",
+    "sub_region": "Eastern Europe"
+  },
+  "Central America": {
+    "place": "Central America",
+    "coor": [
+      11.9601867,-89.2099909
+    ],
+    "geo_region": "Latin America and the Caribbean",
+    "sub_region": "Central America"
+  },
+  "Western Africa": {
+    "place": "Western Africa",
+    "coor": [
+      14.4183504,-9.8739771
+    ],
+    "geo_region": "Africa",
+    "sub_region": "Western Africa"
+  },
+  "NORTHERN AMERICA": {
+    "place": "NORTHERN AMERICA",
+    "coor": [
+      31.7376958,-146.2859581
+    ],
+    "geo_region": "North America",
+    "sub_region": "NORTHERN AMERICA"
+  },
+  "Southern Africa": {
+    "place": "Southern Africa",
+    "coor": [
+      -31.7289975,15.8449015
+    ],
+    "geo_region": "Africa",
+    "sub_region": "Southern Africa"
+  },
+  "South-Eastern Asia": {
+    "place": "South-Eastern Asia",
+    "coor": [
+      8.6132153,107.5723586
+    ],
+    "geo_region": "Asia",
+    "sub_region": "South-Eastern Asia"
+  },
+  "Eastern Africa": {
+    "place": "Eastern Africa",
+    "coor": [
+      -4.2431058,24.5202801
+    ],
+    "geo_region": "Africa",
+    "sub_region": "Eastern Africa"
+  },
+  "Northern Europe": {
+    "place": "Northern Europe",
+    "coor": [
+      52.7716798,-29.5699314
+    ],
+    "geo_region": "Europe",
+    "sub_region": "Northern Europe"
+  },
+  "Eastern Asia": {
+    "place": "Eastern Asia",
+    "coor": [
+      34.42091,95.7061019
+    ],
+    "geo_region": "Asia",
+    "sub_region": "Eastern Asia"
+  },
+  "Melanesia": {
+    "place": "Melanesia",
+    "coor": [
+      -14.1557275,125.9286213
+    ],
+    "geo_region": "Ocenia",
+    "sub_region": "Melanesia"
+  },
+  "Micronesia": {
+    "place": "Micronesia",
+    "coor": [
+      5.1994887,145.7244967
+    ],
+    "geo_region": "Ocenia",
+    "sub_region": "Micronesia"
+  },
+  "Central Asia": {
+    "place": "Central Asia",
+    "coor": [
+      44.9327814,57.9335953
+    ],
+    "geo_region": "Asia",
+    "sub_region": "Central Asia"
+  }
+}
