@@ -11,8 +11,9 @@ Store.prototype.getData = async function () {
   const self = this;
   self.data = await Data.loadMigrations();
   self.places_data = await Data.loadPlacesData();
-  self.links_by_year = Data.createLinksByYear(self.data, self.places_data);
   self.world_map_geojson = await Data.getWorldMapGeoJson();
+  self.links_by_year = Data.createLinksByYear(self.data, self.places_data);
+  self.data_by_years_and_categories = Data.createTotalByYearsAndCategories(self.data, self.places_data);
 }
 
 Store.prototype.structureData = function () {

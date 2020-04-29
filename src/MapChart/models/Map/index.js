@@ -15,6 +15,8 @@ Map.prototype.create = function () {
   const self = this;
 
   self.d3_projection = MapChart.projection.setup({})
+  self.d3_projection.scale(120)
+  self.d3_projection.translate([ 480, 350 ])
   self.dim = Style.setupDims(self.cont.getBoundingClientRect());
   [self.canvas1, self.ctx1] = Dom.setupCanvas(self.cont, self.dim);
   [self.canvas2, self.ctx2] = Dom.setupCanvas(self.cont, self.dim);
@@ -53,16 +55,15 @@ Map.prototype.drawLinks = function () {
 
   Data.calculateLinksLength(links, projection)
 
-  let timer = d3.timer(tick),
-    offset,
-    trans_point = 0
+  if (self.timer) self.timer.stop()
+  self.timer = d3.timer(tick)
+  let offset, trans_point = 0
   function tick(t) {
-    if (trans_point > 1) timer.stop()
+    if (trans_point > 1) self.timer.stop()
     if (!offset) offset = t;
     t = t - offset
     trans_point = t/2000
     ctx.clearRect(0,0,dim.width, dim.height);
     Render.drawLinks(trans_point, links, ctx, projection, style);
   }
-  setTimeout(() => timer.stop(), 3000)
 }
