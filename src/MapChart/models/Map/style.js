@@ -10,12 +10,18 @@ Style.setupDims = function ({width, height}) {
 }
 
 Style.world_map_bg = {
-  "stroke-width": 1,
+  
   fill: "grey",
   color: "black"
+  color: "rgba(255,255,255,0)"
 }
 
 Style.points = {
   fill: "red",
   r: 4
 }
+
+Style.links = {
+    "stroke-width": .3,
+    color: "red"
+  }

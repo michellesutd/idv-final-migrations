@@ -14,6 +14,7 @@ for (let place of places) {
     sub_region = place_mig_info["Sub-region"]
 
   places_data[place] = {
+    place,
     coor: geo_coded_points[place],
     geo_region,
     sub_region

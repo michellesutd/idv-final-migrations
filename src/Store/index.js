@@ -10,6 +10,8 @@ export default function Store() {
 Store.prototype.getData = async function () {
   const self = this;
   self.data = await Data.loadMigrations();
+  self.places_data = await Data.loadPlacesData();
+  self.links_by_year = Data.createLinksByYear(self.data, self.places_data);
   self.world_map_geojson = await Data.getWorldMapGeoJson();
 }
 

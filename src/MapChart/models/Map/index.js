@@ -8,6 +8,7 @@ export default function Map(cont, store) {
 
   self.cont = cont;
   self.store = store;
+  Dom.setupCont(self.cont)
 }
 
 Map.prototype.create = function () {
@@ -16,6 +17,7 @@ Map.prototype.create = function () {
   self.d3_projection = MapChart.projection.setup({})
   self.dim = Style.setupDims(self.cont.getBoundingClientRect());
   [self.canvas, self.ctx] = Dom.setupCanvas(self.cont, self.dim);
+  [self.canvas2, self.ctx2] = Dom.setupCanvas(self.cont, self.dim);
   self.world_map_geojson = self.store.world_map_geojson;
 }
 
@@ -34,7 +36,9 @@ Map.prototype.draw = function () {
     geoPath.context(ctx);
 
   ctx.clearRect(0,0,dim.width, dim.height)
+  self.ctx2.clearRect(0,0,dim.width, dim.height)
   MapChart.polygons.drawMultiple(self.world_map_geojson.features, d => d, ctx, geoPath, Style.world_map_bg)
+  Render.drawLinks(self.store.links_by_year, self.ctx2, projection, Style.links)
   // MapChart.points.drawMultiple(data, ctx, d => ([d.Long, d.Lat]), projection, Style.points)
 
 
