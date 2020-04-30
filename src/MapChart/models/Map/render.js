@@ -1,7 +1,7 @@
 const Render = {};
 export default Render;
 
-Render.drawLinks = function (trans_point, links, ctx, projection, style) {
+Render.drawLinks = function (links, ctx, projection, style) {
   const geoPath = d3.geoPath().projection(projection),
     drawn_places = []
   geoPath.context(ctx)
@@ -9,13 +9,16 @@ Render.drawLinks = function (trans_point, links, ctx, projection, style) {
   const start = new Date().getTime();
   for (let i = 0; i < links.length; i++) {
     const d = links[i];
+    if (d.t === 0 || d.alpha === 0) continue
     let color = style.colors[d.cat];
+    ctx.globalAlpha = d.alpha;
     ctx.beginPath();
     ctx.lineWidth = style["stroke-width"];
     ctx.strokeStyle = color;
-    ctx.setLineDash([d.total_length * trans_point, d.total_length]);
+    ctx.setLineDash([d.total_length * d.t, d.total_length]);
     geoPath({type: "LineString", coordinates: [d.source.coor, d.target.coor] })
     ctx.stroke();
+    ctx.globalAlpha = 1;
   }
   const took = new Date().getTime() - start;
   // console.log("took: " + took + " ms")
@@ -32,6 +35,8 @@ Render.drawLinks = function (trans_point, links, ctx, projection, style) {
     ctx.textAlign = d.coor[0] > 0 ? "start" : "end";
     ctx.font = 10+'px sans-serif';
 
+    ctx.lineWidth = 1;
+    ctx.setLineDash([]);
     ctx.strokeStyle = "white";
     ctx.strokeText(d.place, ...projection(d.coor));
 
@@ -39,3 +44,5 @@ Render.drawLinks = function (trans_point, links, ctx, projection, style) {
     ctx.fillText(d.place, ...projection(d.coor));
   }
 }
+
+
