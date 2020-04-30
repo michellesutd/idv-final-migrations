@@ -48,7 +48,7 @@ Slider.prototype.updateElements = function () {
 Slider.prototype.update = function () {
   const self = this;
 
-  const years = Object.keys(self.store.data_by_years_and_categories),
+  const years = Object.keys(self.store.links_by_year),
     dim = self.dim,
     d3x = setupAxis(),
     cont = self.cont,

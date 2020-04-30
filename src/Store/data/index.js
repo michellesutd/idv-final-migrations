@@ -150,27 +150,30 @@ Data.getWorldMapLandGeoJson = async function () {
   return world_map_geo_json
 }
 
-Data.createTotalByYearsAndCategories = function (data, places_data) {
+Data.createTotalByCategoriesAndYears = function (data, places_data) {
   const data_by_years = group(data, d => d.Year),
     all_places = Object.keys(places_data),
-    data_by_years_and_categories = {}
+    data_by_cat_years = {
+      afr_to_eu: {},
+      other_to_eu: {},
+      afr_to_afr: {}
+    }
 
   for (let year in data_by_years) {
     if (!data_by_years.hasOwnProperty(year)) continue
-    data_by_years_and_categories[year] = {
-      afr_to_eu: 0,
-      other_to_eu: 0,
-      afr_to_afr: 0
-    }
+    data_by_cat_years.afr_to_eu[year] = 0
+    data_by_cat_years.other_to_eu[year] = 0
+    data_by_cat_years.afr_to_afr[year] = 0
+
     const year_data = data_by_years[year];
     for (let i = 0; i < year_data.length; i++) {
       const datum = year_data[i];
-      data_by_years_and_categories[year].afr_to_eu += addIf(datum, d => d === "Africa", d => d === "Europe")
-      data_by_years_and_categories[year].other_to_eu += addIf(datum, d => d !== "Africa", d => d === "Europe")
-      data_by_years_and_categories[year].afr_to_afr += addIf(datum, d => d === "Africa", d => d === "Europe")
+      data_by_cat_years.afr_to_eu[year] += addIf(datum, d => d === "Africa", d => d === "Europe")
+      data_by_cat_years.other_to_eu[year] += addIf(datum, d => d !== "Africa", d => d === "Europe")
+      data_by_cat_years.afr_to_afr[year] += addIf(datum, d => d === "Africa", d => d === "Europe")
     }
   }
-  return data_by_years_and_categories
+  return data_by_cat_years
 
   function addIf(datum, checkSourceGeo, checkTargetGeo) {
     let destination_total = 0
@@ -200,5 +203,7 @@ function group(data, classGetter) {
     dct[k].push(v)
   }
 }
+
+
 
 

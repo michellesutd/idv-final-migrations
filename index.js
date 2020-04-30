@@ -20,6 +20,13 @@ async  function initialize() {
     map.create()
     map.animateTroughYears()
   }
+  //draw line chart
+  {
+    const cont = document.querySelector("#area_cont_up")
+    const lineChart = new LineChart(cont, store);
+    lineChart.create()
+    lineChart.draw()
+  }
   {
     const cont = document.querySelector("#slider_cont")
     const slider = new Slider(cont, store);

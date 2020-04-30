@@ -1,6 +1,6 @@
 import Chart from "./chart.js"
 import Data from "./data.js"
-
+import Style from "./style.js"
 
 export default function LineChart(cont, store) {
   const self = this;
@@ -18,10 +18,12 @@ LineChart.prototype.create = function () {
 
 LineChart.prototype.draw = function() {
   const self = this;
-  self.line_data = Data.setupTotalByYears(self.store.data);
+
+  self.line_data = Data.prepareData(self.store.data_by_cat_years)
+  console.log(self.line_data);
   [self.d3x, self.d3y] = self.setupAxis();
   const [xValue, yValue] = [d => d.date, d => d.value]
-  Chart.draw(self.line_data, self.cont, self.dim, [self.d3x, self.d3y], [xValue, yValue])
+  Chart.draw(self.line_data, self.cont, self.dim, [self.d3x, self.d3y], [xValue, yValue], Style.style)
 }
 
 LineChart.prototype.setupAxis = function() {
@@ -31,14 +33,14 @@ LineChart.prototype.setupAxis = function() {
   return [setupXScale(), setupYScale()]
 
   function setupXScale() {
-    return d3.scaleTime()
+    return d3.scaleLinear()
       .domain(d3.extent(data, d => d.date))
       .range([0, self.dim.width])
   }
 
   function setupYScale() {
     return d3.scaleLinear()
-      .domain(d3.extent(data, d => d.value))
+      .domain([0, d3.max(data, d => d.value)])
       .range([self.dim.height, 0])
   }
 }

@@ -1,12 +1,11 @@
 const Data = {};
 export default Data;
 
-Data.setupTotalByYears = function(data) {
-  const line_data = [];
-
-  dates.forEach(date => {
-    line_data.push({date: new Date(date), value: d3.sum(data, d => d[date])})
-  })
-  line_data.sort((a, b) => b.date - a.date)
-  return {total: line_data}
+Data.prepareData = function(data) {
+  const line_data = {};
+  for (let k in data) {
+    if (!data.hasOwnProperty(k)) continue
+    line_data[k] = Object.keys(data[k]).map(y => ({date: y, value: data[k][y]}))
+  }
+  return line_data
 }
