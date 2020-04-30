@@ -1,11 +1,11 @@
 const Data = {};
 export default Data;
 
-Data.prepareData = function(data) {
+Data.prepareData = function(data, categories) {
   const line_data = {};
-  for (let k in data) {
-    if (!data.hasOwnProperty(k)) continue
-    line_data[k] = Object.keys(data[k]).map(y => ({date: y, value: data[k][y]}))
-  }
+  categories.forEach(cat => {
+    line_data[cat] = Object.keys(data[cat]).map(y => ({date: y, value: data[cat][y]}))
+  })
   return line_data
 }
+

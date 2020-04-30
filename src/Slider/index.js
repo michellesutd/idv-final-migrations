@@ -23,8 +23,8 @@ Slider.prototype.setupDims = function () {
   const dim = {
     outer_width: rect.width,
     outer_height: rect.height,
-    mt: 5,
-    mr: 20,
+    mt: 6,
+    mr: 40,
     mb: 20,
     ml: 40
   };

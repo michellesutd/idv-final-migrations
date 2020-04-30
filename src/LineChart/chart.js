@@ -4,21 +4,6 @@ function create(cont){
     main_g = svg.append("g").attr("class", "main_g");
 }
 
-function setupDims({width, height}) {
-  const dim = {
-    outer_width: width,
-    outer_height: height,
-    mt: 60,
-    mr: 20,
-    mb: 30,
-    ml: 40
-  };
-  dim.width = dim.outer_width - dim.ml - dim.mr;
-  dim.height = dim.outer_height - dim.mt - dim.mb;
-
-  return dim
-}
-
 function updateElements(cont, dim) {
   cont = d3.select(cont)
   const svg = cont.select("svg.chart"),
@@ -28,7 +13,7 @@ function updateElements(cont, dim) {
   main_g.attr("transform", "translate(" + dim.ml + "," + dim.mt + ")");
 }
 
-function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style) {
+function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style, orientation) {
   cont = d3.select(cont)
   const svg = cont.select("svg.chart"),
     main_g = svg.select("g.main_g")
@@ -71,12 +56,12 @@ function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style) {
   function drawAxis() {
     main_g.append("g")
       .attr("class", "axis axis--x")
-      .attr("transform", "translate(0," + dim.height + ")")
-      .call(d3.axisBottom(d3x).ticks(0));
+      .attr("transform", "translate(0," + (orientation === "up" ? dim.height : 0) + ")")
+      .call(d3[orientation === "up" ? "axisBottom" : "axisTop"](d3x).ticks(4).tickFormat(n => ""));
 
     main_g.append("g")
       .attr("class", "axis axis--y")
-      .call(d3.axisLeft(d3y).tickFormat(n => numberFormat(n, 2)));
+      .call(d3.axisLeft(d3y).tickFormat(n => numberFormat(n, 2)).ticks(4));
 
     function numberFormat(n,d){let x=(''+n).length,p=Math.pow;d=p(10,d);x-=x%3;return Math.round(n*d/p(10,x))/d+" kMBTPE"[x/3]}
 
@@ -86,8 +71,9 @@ function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style) {
 
 export default {
   create,
-  setupDims,
   updateElements,
   draw,
 }
+
+
 

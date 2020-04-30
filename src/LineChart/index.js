@@ -2,16 +2,17 @@ import Chart from "./chart.js"
 import Data from "./data.js"
 import Style from "./style.js"
 
-export default function LineChart(cont, store) {
+export default function LineChart(cont, store, config) {
   const self = this;
 
   self.cont = cont;
   self.store = store;
+  self.config = config;
 }
 
 LineChart.prototype.create = function () {
   const self = this;
-  self.dim = Chart.setupDims(self.cont.getBoundingClientRect())
+  self.dim = Style.setupDims(self.cont.getBoundingClientRect())
   Chart.create(self.cont);
   Chart.updateElements(self.cont, self.dim)
 }
@@ -19,14 +20,16 @@ LineChart.prototype.create = function () {
 LineChart.prototype.draw = function() {
   const self = this;
 
-  self.line_data = Data.prepareData(self.store.data_by_cat_years)
-  console.log(self.line_data);
-  [self.d3x, self.d3y] = self.setupAxis();
-  const [xValue, yValue] = [d => d.date, d => d.value]
-  Chart.draw(self.line_data, self.cont, self.dim, [self.d3x, self.d3y], [xValue, yValue], Style.style)
+  const [xValue, yValue] = [d => d.date, d => d.value],
+    style = Style.style,
+    orientation = self.config.orientation;
+
+  self.line_data = Data.prepareData(self.store.data_by_cat_years, self.config.categories)
+  ;[self.d3x, self.d3y] = self.setupAxis(orientation);
+  Chart.draw(self.line_data, self.cont, self.dim, [self.d3x, self.d3y], [xValue, yValue], style, orientation)
 }
 
-LineChart.prototype.setupAxis = function() {
+LineChart.prototype.setupAxis = function(orientation) {
   const self = this;
   let data = self.line_data;
   if (!Array.isArray(data)) data = d3.merge(Object.values(data))
@@ -41,6 +44,6 @@ LineChart.prototype.setupAxis = function() {
   function setupYScale() {
     return d3.scaleLinear()
       .domain([0, d3.max(data, d => d.value)])
-      .range([self.dim.height, 0])
+      .range(orientation === "up" ? [self.dim.height, 0] : [0, self.dim.height])
   }
 }
