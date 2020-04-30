@@ -20,6 +20,7 @@ Map.prototype.create = function () {
   self.dim = Style.setupDims(self.cont.getBoundingClientRect());
   [self.canvas1, self.ctx1] = Dom.setupCanvas(self.cont, self.dim);
   [self.canvas2, self.ctx2] = Dom.setupCanvas(self.cont, self.dim);
+  self.svg = Dom.setupOverlaySvg(self.cont, self.dim);
   self.world_map_geojson = self.store.world_map_geojson;
 }
 
@@ -53,7 +54,7 @@ Map.prototype.drawLinks = function () {
     links = links_by_year[self.store.selected_year],
     style = Style.links
 
-  Data.calculateLinksLength(links, projection)
+  Data.calculateLinksLengthAndSetupLinksInteraction(self.svg, links, projection)
 
   if (self.timer) self.timer.stop()
   self.timer = d3.timer(tick)
