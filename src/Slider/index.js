@@ -77,8 +77,10 @@ Slider.prototype.update = function () {
       // .default([dates[0], dates[1]])
       .fill('#2196f3')
       .ticks(7)
-      .marks(years)
-      .on("onchange", date => self.store.event.trigger("updateSelectedYear", date));
+      .on("onchange", year => {
+        year = years.find(y => y > year)
+        self.store.event.trigger("updateSelectedYear", year)
+      });
 
     if (self.store.selected_year) self.slider.default(self.store.selected_year)
 
@@ -91,4 +93,5 @@ Slider.prototype.updateSelectedDate = function () {
   const self = this;
   self.slider.silentValue(self.store.selected_date)
 }
+
 
