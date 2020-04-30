@@ -26,3 +26,24 @@ Dom.setupOverlaySvg = function (cont, dim) {
   svg.style.height = dim.height + "px"
   return svg
 }
+
+Dom.calculateLinksLengthAndSetupLinksInteraction = function (svg, links, projection, mouseOverLinkF) {
+  const geoPath = d3.geoPath().projection(projection),
+    start = new Date().getTime();
+
+  svg.innerHTML = ""
+  for (let i = 0; i < links.length; i++) {
+    const d = links[i];
+    const pathD = geoPath({type: "LineString", coordinates: [d.source.coor, d.target.coor] })
+    const path = svg.appendChild(document.createElementNS("http://www.w3.org/2000/svg","path"))
+    path.setAttribute("d", pathD)
+    path.setAttribute("stroke-width", "3")
+    path.setAttribute("opacity", "0")
+    path.setAttribute("fill", "none")
+    path.setAttribute("stroke", "black")
+    path.addEventListener("mouseover", function () {mouseOverLinkF(d.cat);})
+    path.addEventListener("mouseout", function () {mouseOverLinkF(null);})
+    d.total_length = path.getTotalLength()
+  }
+  console.log("done calculation: " + (new Date().getTime() - start) + " ms")
+}

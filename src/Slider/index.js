@@ -91,3 +91,4 @@ Slider.prototype.updateSelectedDate = function () {
   const self = this;
   self.slider.silentValue(self.store.selected_date)
 }
+

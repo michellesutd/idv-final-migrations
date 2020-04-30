@@ -6,7 +6,6 @@ import Slider from "./src/Slider/index.js"
 const store = new Store();
 store.event.on("update", store.update.bind(store));
 store.event.on("updateSelectedYear", store.updateSelectedYear.bind(store));
-store.event.on("updateFocusedMigrationCategory", store.updateFocusedMigrationCategory.bind(store));
 
 async  function initialize() {
   await store.getData();
@@ -18,7 +17,6 @@ async  function initialize() {
     map.update()
     store.event.on("update", map.update.bind(map))
     store.event.on("updateSelectedYear", map.drawLinks.bind(map))
-    store.event.on("updateFocusedMigrationCategory", map.drawLinks.bind(map))
   }
   {
     const cont = document.querySelector("#slider_cont")
