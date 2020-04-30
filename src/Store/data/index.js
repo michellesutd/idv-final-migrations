@@ -82,11 +82,15 @@ Data.createLinksByYearSubRegions = function (data, places_data) {
           sub_to_sub_key = origin_data.sub_region + "\t" + destination_data.sub_region;
         if (!links_by_year_sub_to_sub.hasOwnProperty(year)) links_by_year_sub_to_sub[year] = {};
         if (!links_by_year_sub_to_sub[year][sub_to_sub_key]) links_by_year_sub_to_sub[year][sub_to_sub_key] = [];
-        links_by_year_sub_to_sub[year][sub_to_sub_key].push({
+        const link = {
           value: +datum[origin],
           source: origin_data,
           target: destination_data
-        })
+        }
+        const migration_category = getMigrationCategory(link);
+        if (!migration_category) continue
+        link.cat = migration_category
+        links_by_year_sub_to_sub[year][sub_to_sub_key].push(link)
       }
 
     }
@@ -114,17 +118,16 @@ Data.createLinksByYearSubRegions = function (data, places_data) {
   function chooseTopLinksByYear(links_by_year, n) {
     for (let year in links_by_year) {
       if (!links_by_year.hasOwnProperty(year)) continue
-      links_by_year[year] = links_by_year[year].filter(filterNotUsedLinks)
       links_by_year[year].sort((a, b) => b.value - a.value)
       links_by_year[year] = links_by_year[year].slice(0, n)
     }
     return links_by_year
   }
 
-  function filterNotUsedLinks(d) {
-    if (d.source.geo_region === "Africa" && d.target.geo_region === "Europe") return true
-    else if (d.source.geo_region !== "Europe" && d.target.geo_region === "Europe") return true
-    else if (d.source.geo_region === "Africa" && d.target.geo_region === "Africa") return true
+  function getMigrationCategory(d) {
+    if (d.source.geo_region === "Africa" && d.target.geo_region === "Europe") return "afr_to_eu"
+    else if (d.source.geo_region !== "Europe" && d.target.geo_region === "Europe") return "other_to_eu"
+    else if (d.source.geo_region === "Africa" && d.target.geo_region === "Africa") return "afr_to_afr"
     else return false
   }
 }

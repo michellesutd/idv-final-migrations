@@ -5,6 +5,7 @@ export default function Store() {
   const self = this;
   self.event = new Event();
   self.selected_year = "1990"
+  self.focused_migration_category = null;
 }
 
 Store.prototype.getData = async function () {
@@ -27,7 +28,8 @@ Store.prototype.update = function() {
 }
 
 Store.prototype.updateSelectedYear = function(year) {
-  const self = this;
-
-  self.selected_year = year
+  this.selected_year = year
+}
+Store.prototype.updateFocusedMigrationCategory = function(cat) {
+  this.focused_migration_category = cat
 }

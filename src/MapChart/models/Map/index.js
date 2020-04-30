@@ -47,23 +47,33 @@ Map.prototype.drawBg = function () {
 
 Map.prototype.drawLinks = function () {
   const self = this;
-  const ctx = self.ctx2,
+  let ctx = self.ctx2,
     dim = self.dim,
     projection = self.d3_projection,
     links_by_year = self.store.links_by_year,
     links = links_by_year[self.store.selected_year],
-    style = Style.links
+    focused_migration_category = self.store.focused_migration_category,
+    style = Style.links,
+    duration = 0,
+    mouseOverLinkF = cat => self.store.event.trigger("updateFocusedMigrationCategory", cat)
 
-  Data.calculateLinksLengthAndSetupLinksInteraction(self.svg, links, projection)
+  if (focused_migration_category) {
+    links = links.filter(d => d.cat === focused_migration_category)
+    duration = 0
+  }
+  if (self.store.selected_year !== self.redered_year) {
+    self.redered_year = self.store.selected_year
+    Dom.calculateLinksLengthAndSetupLinksInteraction(self.svg, links, projection, mouseOverLinkF)
+  }
 
   if (self.timer) self.timer.stop()
   self.timer = d3.timer(tick)
-  let offset, trans_point = 0
+  let offset, trans_point = 0;
   function tick(t) {
     if (trans_point > 1) self.timer.stop()
     if (!offset) offset = t;
     t = t - offset
-    trans_point = t/2000
+    trans_point = duration > 0 ? t/duration : 1
     ctx.clearRect(0,0,dim.width, dim.height);
     Render.drawLinks(trans_point, links, ctx, projection, style);
   }
