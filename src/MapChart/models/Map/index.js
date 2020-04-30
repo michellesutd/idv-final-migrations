@@ -51,19 +51,15 @@ Map.prototype.drawLinks = function () {
     dim = self.dim,
     projection = self.d3_projection,
     links_by_year = self.store.links_by_year,
-    links = links_by_year[self.store.selected_year],
+    selected_year = self.store.selected_year,
+    links = links_by_year[selected_year],
     focused_migration_category = self.store.focused_migration_category,
-    style = Style.links,
-    mouseOverLinkF = cat => self.store.event.trigger("updateFocusedMigrationCategory", cat)
+    style = Style.links
 
-  if (focused_migration_category) {
-    links = links.filter(d => d.cat === focused_migration_category)
-  }
-  if (self.store.selected_year !== self.redered_year) {
-    self.redered_year = self.store.selected_year
-    Dom.calculateLinksLengthAndSetupLinksInteraction(self.svg, links, projection, mouseOverLinkF)
-  }
+  self.calculateLinksLengthAndSetupLinksInteraction(selected_year)
+  if (focused_migration_category) links = links.filter(d => d.cat === focused_migration_category)
   if (self.timer) self.timer.stop()
+
   links.forEach(d => {d.t = 1; d.alpha = 1})
   ctx.clearRect(0,0,dim.width, dim.height);
   Render.drawLinks(links, ctx, projection, style);
@@ -78,26 +74,36 @@ Map.prototype.animateTroughYears = function () {
     all_links = d3.merge(Object.values(links_by_year)),
     years = Object.keys(links_by_year),
     style = Style.links,
-    duration = 10*1000,
+    dur = 2,
     mouseOverLinkF = cat => self.store.event.trigger("updateFocusedMigrationCategory", cat)
   calculatePathLens();
 
   for (let i = 0; i < years.length; i++) {
-    const links = links_by_year[years[i]];
-
+    const links = links_by_year[years[i]],
+      delay_spread = dur/(links.length-1)
+    if (i > 0) {
+      const d = {year: years[i-1]}
+      gsap.to(d, dur, {
+        year: years[i],
+        delay: dur*(i),
+        ease: "none",
+        onUpdate() {self.store.event.trigger("updateSelectedYear", {year: d.year, silent: true})},
+      })
+    }
     for (let j = 0; j < links.length; j++) {
-      const d = links[j];
+      const d = links[j],
+        delay = dur*i + (j*delay_spread)
       d.t = 0;
       d.alpha = 1;
-      gsap.to(d, 2, {t: 1, delay: i})
-      if (i < years.length-1) gsap.to(d, 1.5, {alpha: 0, delay: i+1.5})
+      gsap.to(d, dur, {t: 1, delay})
+      if (i < years.length-1) gsap.to(d, 1.5, {alpha: 0, delay: delay+1.5})
     }
   }
 
   if (self.timer) self.timer.stop()
   self.timer = d3.timer(tick)
   function tick(t) {
-    if (t > duration) self.timer.stop()
+    if (t > 20*1000) self.timer.stop()
     ctx.clearRect(0,0,dim.width, dim.height);
     Render.drawLinks(all_links, ctx, projection, style);
   }
@@ -105,8 +111,24 @@ Map.prototype.animateTroughYears = function () {
   function calculatePathLens() {
     for (let year in links_by_year) {
       if (!links_by_year.hasOwnProperty(year)) continue
-      const links = links_by_year[year]
-      Dom.calculateLinksLengthAndSetupLinksInteraction(self.svg, links, projection, mouseOverLinkF)
+      self.calculateLinksLengthAndSetupLinksInteraction(year)
     }
   }
 }
+
+Map.prototype.calculateLinksLengthAndSetupLinksInteraction = function(year) {
+  const self = this;
+  const projection = self.d3_projection,
+    mouseOverLinkF = cat => self.store.event.trigger("updateFocusedMigrationCategory", cat),
+    links = self.store.links_by_year[year]
+
+  if (year != self.redered_year) {
+    self.svg_redered_year = year
+    Dom.calculateLinksLengthAndSetupLinksInteraction(self.svg, links, projection, mouseOverLinkF)
+  }
+}
+
+
+
+
+

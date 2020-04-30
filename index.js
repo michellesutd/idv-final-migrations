@@ -15,7 +15,7 @@ async  function initialize() {
     const cont = document.querySelector("#map_cont")
     const map = new Map(cont, store);
     store.event.on("update", map.update.bind(map))
-    store.event.on("updateSelectedYear", map.drawLinks.bind(map))
+    store.event.on("updateSelectedYear", ({year, silent}) => !silent ? map.drawLinks() : null)
     store.event.on("updateFocusedMigrationCategory", map.drawLinks.bind(map))
     map.create()
     map.animateTroughYears()
@@ -25,6 +25,7 @@ async  function initialize() {
     const slider = new Slider(cont, store);
     slider.create()
     slider.update()
+    store.event.on("updateSelectedYear", slider.updateSelectedYear.bind(slider))
   }
 };
 document.addEventListener('DOMContentLoaded', initialize, false);

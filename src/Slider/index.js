@@ -51,7 +51,6 @@ Slider.prototype.update = function () {
   const years = Object.keys(self.store.data_by_years_and_categories),
     dim = self.dim,
     d3x = setupAxis(),
-    time_format = self.store.time_format,
     cont = self.cont,
     svg = cont.select("svg.chart"),
     main_g = svg.select("g.main_g")
@@ -73,13 +72,12 @@ Slider.prototype.update = function () {
       .min(d3x.domain()[0])
       .max(d3x.domain()[1])
       .width(dim.width)
-      // .tickFormat(d3.timeFormat(time_format))
-      // .default([dates[0], dates[1]])
       .fill('#2196f3')
       .ticks(7)
       .on("onchange", year => {
-        year = years.find(y => y > year)
-        self.store.event.trigger("updateSelectedYear", year)
+        const years_reversed = years.slice(0).reverse()
+        year = years_reversed.find(y => year > +y || +y === year)
+        self.store.event.trigger("updateSelectedYear", {year, silent: false, self_trigger: true})
       });
 
     if (self.store.selected_year) self.slider.default(self.store.selected_year)
@@ -89,9 +87,9 @@ Slider.prototype.update = function () {
 
 }
 
-Slider.prototype.updateSelectedDate = function () {
+Slider.prototype.updateSelectedYear = function ({year, silent, self_trigger}) {
   const self = this;
-  self.slider.silentValue(self.store.selected_date)
+  if (!self_trigger) self.slider.silentValue(self.store.selected_year)
 }
 
 

@@ -37,7 +37,7 @@ Dom.calculateLinksLengthAndSetupLinksInteraction = function (svg, links, project
     const pathD = geoPath({type: "LineString", coordinates: [d.source.coor, d.target.coor] })
     const path = svg.appendChild(document.createElementNS("http://www.w3.org/2000/svg","path"))
     path.setAttribute("d", pathD)
-    path.setAttribute("stroke-width", "3")
+    path.setAttribute("stroke-width", "5")
     path.setAttribute("opacity", "0")
     path.setAttribute("fill", "none")
     path.setAttribute("stroke", "black")

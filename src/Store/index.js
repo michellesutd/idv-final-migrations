@@ -27,7 +27,7 @@ Store.prototype.update = function() {
 
 }
 
-Store.prototype.updateSelectedYear = function(year) {
+Store.prototype.updateSelectedYear = function({year, silent}) {
   this.selected_year = year
 }
 Store.prototype.updateFocusedMigrationCategory = function(cat) {

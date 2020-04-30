@@ -35,7 +35,7 @@ Render.drawLinks = function (links, ctx, projection, style) {
     ctx.textAlign = d.coor[0] > 0 ? "start" : "end";
     ctx.font = 10+'px sans-serif';
 
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 2;
     ctx.setLineDash([]);
     ctx.strokeStyle = "white";
     ctx.strokeText(d.place, ...projection(d.coor));
@@ -44,5 +44,8 @@ Render.drawLinks = function (links, ctx, projection, style) {
     ctx.fillText(d.place, ...projection(d.coor));
   }
 }
+
+
+
 
 
