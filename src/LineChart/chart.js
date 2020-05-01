@@ -41,7 +41,7 @@ function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style, orientation)
     const area = d3.area()
       .curve(d3.curveMonotoneX)
       .x(d => d3x(xValue(d)))
-      .y0(d => d3y(0))
+      .y0(d => d3y.range()[0])
       .y1(d => d3y(yValue(d)));
 
     main_g.append("path")

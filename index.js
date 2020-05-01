@@ -22,9 +22,10 @@ async  function initialize() {
   }
   {
     const cont = document.querySelector("#area_cont_up")
-    const lineChart = new LineChart(cont, store, {categories: ["afr_to_eu", "afr_to_afr"], orientation: "up"});
+    const lineChart = new LineChart(cont, store, {categories: ["afr_to_afr", "afr_to_eu"], orientation: "up"});
     lineChart.create()
     lineChart.draw()
+    store.event.on("updateFocusedMigrationCategory", lineChart.draw.bind(lineChart));
   }
   {
     const cont = document.querySelector("#slider_cont")

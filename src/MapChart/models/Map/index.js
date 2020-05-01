@@ -47,6 +47,7 @@ Map.prototype.drawBg = function () {
 
 Map.prototype.drawLinks = function () {
   const self = this;
+  if (self.animating) return
   let ctx = self.ctx2,
     dim = self.dim,
     projection = self.d3_projection,
@@ -54,11 +55,10 @@ Map.prototype.drawLinks = function () {
     selected_year = self.store.selected_year,
     links = links_by_year[selected_year],
     focused_migration_category = self.store.focused_migration_category,
-    style = Style.links
+    style = Style.links;
 
   self.calculateLinksLengthAndSetupLinksInteraction(selected_year)
   if (focused_migration_category) links = links.filter(d => d.cat === focused_migration_category)
-  if (self.timer) self.timer.stop()
 
   links.forEach(d => {d.t = 1; d.alpha = 1})
   ctx.clearRect(0,0,dim.width, dim.height);
@@ -75,7 +75,9 @@ Map.prototype.animateTroughYears = function () {
     years = Object.keys(links_by_year),
     style = Style.links,
     dur = 2,
-    mouseOverLinkF = cat => self.store.event.trigger("updateFocusedMigrationCategory", cat)
+    mouseOverLinkF = cat => self.store.event.trigger("updateFocusedMigrationCategory", cat);
+  self.stopAnimation()
+  self.animating = true
   calculatePathLens();
 
   for (let i = 0; i < years.length; i++) {
@@ -88,6 +90,7 @@ Map.prototype.animateTroughYears = function () {
         delay: dur*(i),
         ease: "none",
         onUpdate() {self.store.event.trigger("updateSelectedYear", {year: d.year, silent: true})},
+        onComplete() {if (i === years.length-1) setTimeout(self.stopAnimation.bind(self), 2000)},
       })
     }
     for (let j = 0; j < links.length; j++) {
@@ -100,10 +103,9 @@ Map.prototype.animateTroughYears = function () {
     }
   }
 
-  if (self.timer) self.timer.stop()
   self.timer = d3.timer(tick)
   function tick(t) {
-    if (t > 20*1000) self.timer.stop()
+    if (t > 20*1000) self.stopAnimation()
     ctx.clearRect(0,0,dim.width, dim.height);
     Render.drawLinks(all_links, ctx, projection, style);
   }
@@ -116,13 +118,18 @@ Map.prototype.animateTroughYears = function () {
   }
 }
 
+Map.prototype.stopAnimation = function() {
+  this.animating = false;
+  if (this.timer) this.timer.stop()
+}
+
 Map.prototype.calculateLinksLengthAndSetupLinksInteraction = function(year) {
   const self = this;
   const projection = self.d3_projection,
     mouseOverLinkF = cat => self.store.event.trigger("updateFocusedMigrationCategory", cat),
     links = self.store.links_by_year[year]
 
-  if (year != self.redered_year) {
+  if (year != self.svg_redered_year) {
     self.svg_redered_year = year
     Dom.calculateLinksLengthAndSetupLinksInteraction(self.svg, links, projection, mouseOverLinkF)
   }

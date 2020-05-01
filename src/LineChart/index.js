@@ -20,8 +20,13 @@ LineChart.prototype.create = function () {
 LineChart.prototype.draw = function() {
   const self = this;
 
-  const [xValue, yValue] = [d => d.date, d => d.value],
-    style = Style.style,
+  const focused_category = self.store.focused_migration_category,
+    [xValue, yValue] = [d => d.date, d => d.value],
+    style = {
+      afr_to_eu: {color: focused_category === "afr_to_afr" ? "none" : "red"},
+      afr_to_afr: {color: focused_category === "afr_to_eu" ? "none" : "yellow"},
+      other_to_eu: {color: "blue"}
+    },
     orientation = self.config.orientation;
 
   self.line_data = Data.prepareData(self.store.data_by_cat_years, self.config.categories)
@@ -43,7 +48,7 @@ LineChart.prototype.setupAxis = function(orientation) {
 
   function setupYScale() {
     return d3.scaleLinear()
-      .domain([0, d3.max(data, d => d.value)])
+      .domain(d3.extent(data, d => d.value))
       .range(orientation === "up" ? [self.dim.height, 0] : [0, self.dim.height])
   }
 }
