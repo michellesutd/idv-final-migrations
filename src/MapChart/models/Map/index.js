@@ -79,20 +79,12 @@ Map.prototype.animateTroughYears = function () {
   self.stopAnimation()
   self.animating = true
   calculatePathLens();
+  animateHistogramMask()
 
   for (let i = 0; i < years.length; i++) {
     const links = links_by_year[years[i]],
       delay_spread = dur/(links.length-1)
-    if (i > 0) {
-      const d = {year: years[i-1]}
-      gsap.to(d, dur, {
-        year: years[i],
-        delay: dur*(i),
-        ease: "none",
-        onUpdate() {self.store.event.trigger("updateSelectedYear", {year: d.year, silent: true})},
-        onComplete() {if (i === years.length-1) setTimeout(self.stopAnimation.bind(self), 2000)},
-      })
-    }
+
     for (let j = 0; j < links.length; j++) {
       const d = links[j],
         delay = dur*i + (j*delay_spread)
@@ -115,6 +107,24 @@ Map.prototype.animateTroughYears = function () {
       if (!links_by_year.hasOwnProperty(year)) continue
       self.calculateLinksLengthAndSetupLinksInteraction(year)
     }
+  }
+
+  function animateHistogramMask() {
+    console.log(document.querySelectorAll("defs rect"))
+    document.querySelectorAll("defs rect").forEach(function (el) {
+      console.log(el)
+      gsap.to(el, years.length*dur+dur, {
+        attr:{x: 0},
+        ease: "none",
+        onComplete() {
+          setTimeout(() => {
+            self.store.event.trigger("updateSelectedYear", {year: years[years.length-1]})
+            gsap.to(".slider .handle", .5, {alpha: 1})
+            self.stopAnimation()
+          }, 2000)
+        },
+      })
+    })
   }
 }
 

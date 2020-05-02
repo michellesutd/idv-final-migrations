@@ -11,6 +11,7 @@ store.event.on("updateFocusedMigrationCategory", store.updateFocusedMigrationCat
 async  function initialize() {
   await store.getData();
   store.update()
+  let animateTroughYears
   {
     const cont = document.querySelector("#map_cont")
     const map = new Map(cont, store);
@@ -18,7 +19,8 @@ async  function initialize() {
     store.event.on("updateSelectedYear", ({year, silent}) => !silent ? map.drawLinks() : null)
     store.event.on("updateFocusedMigrationCategory", map.drawLinks.bind(map))
     map.create()
-    map.animateTroughYears()
+    // map.drawLinks()
+    animateTroughYears = map.animateTroughYears.bind(map)
   }
   {
     const cont = document.querySelector("#area_cont_up")
@@ -40,5 +42,6 @@ async  function initialize() {
     lineChart.create()
     lineChart.draw()
   }
+  animateTroughYears()
 };
 document.addEventListener('DOMContentLoaded', initialize, false);

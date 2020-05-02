@@ -166,20 +166,22 @@ Data.createTotalByCategoriesAndYears = function (data, places_data) {
     data_by_cat_years.afr_to_afr[year] = 0
 
     const year_data = data_by_years[year];
+    console.log(year_data)
     for (let i = 0; i < year_data.length; i++) {
       const datum = year_data[i];
-      data_by_cat_years.afr_to_eu[year] += addIf(datum, d => d === "Africa", d => d === "Europe")
+      data_by_cat_years.afr_to_eu[year] += addIf(datum, d => d === "Africa", d => d === "Asia")
       data_by_cat_years.other_to_eu[year] += addIf(datum, d => d !== "Africa", d => d === "Europe")
-      data_by_cat_years.afr_to_afr[year] += addIf(datum, d => d === "Africa", d => d === "Europe")
+      data_by_cat_years.afr_to_afr[year] += addIf(datum, d => d === "Africa", d => d === "Africa")
     }
   }
+  console.log(data_by_cat_years)
   return data_by_cat_years
 
   function addIf(datum, checkSourceGeo, checkTargetGeo) {
     let destination_total = 0
-    if (checkSourceGeo(datum["Geographic Region"])) return destination_total
+    if (!checkSourceGeo(datum["Geographic Region"])) return destination_total
     all_places.forEach(place => {
-      if (checkTargetGeo(place["Geographic Region"])) return
+      if (!checkTargetGeo(places_data[place].geo_region)) return
       destination_total += +datum[place]
     })
     return destination_total
