@@ -24,19 +24,20 @@ function updateElements(cont, dim) {
     .attr("x", -dim.width).attr("y", 0).attr("width", dim.width).attr("height", dim.height+dim.mt+dim.mb)
 }
 
-function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style, orientation) {
+function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style, mouseOverLinkF) {
   cont = d3.select(cont)
   const svg = cont.select("svg.chart"),
-    main_g = svg.select("g.main_g")
+    main_g = svg.select("g.main_g");
+
   main_g.html("")
   drawAxis()
 
-  for (let k in data) {
-    if (!data.hasOwnProperty(k)) continue
-    drawLine(data[k], style[k])
+  for (let cat in data) {
+    if (!data.hasOwnProperty(cat)) continue
+    drawLine(data[cat], style[cat], cat)
   }
 
-  function drawLine(data, style) {
+  function drawLine(data, style, cat) {
     const line = d3.line()
       .curve(d3.curveMonotoneX)
       .x(d => d3x(xValue(d)))
@@ -59,14 +60,17 @@ function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style, orientation)
       .attr("class", "area")
       .style("fill", "#fff")
       .style("stroke-width", 0)
-      .attr("d", area(data));
+      .attr("d", area(data))
 
-    main_g.append("path")
+    const path_area = main_g.append("path")
       .attr("class", "area")
       .style("fill", style.color)
       .style("fill-opacity", .2)
       .style("stroke-width", 0)
       .attr("d", area(data));
+
+    // path_area.node().addEventListener("mouseover", function () {mouseOverLinkF(cat);})
+    // path_area.node().addEventListener("mouseout", function () {mouseOverLinkF(null);})
 
     data.forEach(d => {
       main_g.append("line")

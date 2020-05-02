@@ -25,6 +25,6 @@ Style.links = {
   colors: {
     afr_to_eu: "red",
     other_to_eu: "blue",
-    afr_to_afr: "yellow"
+    afr_to_afr: "darkgreen"
   }
 }

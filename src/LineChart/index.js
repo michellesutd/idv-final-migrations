@@ -24,14 +24,16 @@ LineChart.prototype.draw = function() {
     [xValue, yValue] = [d => d.date, d => d.value],
     style = {
       afr_to_eu: {color: "red"},
-      afr_to_afr: {color: focused_category === "other_to_eu" ? "none" : "yellow"},
+      afr_to_afr: {color: focused_category === "other_to_eu" ? "none" : "darkgreen"},
       other_to_eu: {color: focused_category === "afr_to_afr" ? "none" :"blue"}
     },
-    orientation = self.config.orientation;
+    orientation = self.config.orientation,
+    mouseOverLinkF = cat => self.store.event.trigger("updateFocusedMigrationCategory", cat)
+
 
   self.line_data = Data.prepareData(self.store.data_by_cat_years, self.config.categories)
   ;[self.d3x, self.d3y] = self.setupAxis(orientation);
-  Chart.draw(self.line_data, self.cont, self.dim, [self.d3x, self.d3y], [xValue, yValue], style, orientation)
+  Chart.draw(self.line_data, self.cont, self.dim, [self.d3x, self.d3y], [xValue, yValue], style, mouseOverLinkF)
 }
 
 LineChart.prototype.setupAxis = function(orientation) {
