@@ -185,6 +185,15 @@ Data.createTotalByCategoriesAndYears = function (data, places_data) {
 
 }
 
+Data.setupLinkWidth = function (links_by_year) {
+  for (let year in links_by_year) {
+    if (!links_by_year.hasOwnProperty(year)) continue
+    const year_data = links_by_year[year],
+      scale = d3.scaleLinear().range([.3, 4]).domain(d3.extent(year_data, d => d.value))
+    year_data.forEach(d => d.link_width = scale(d.value))
+  }
+}
+
 
 function group(data, classGetter) {
   const classDict = {}

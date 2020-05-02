@@ -13,7 +13,7 @@ Render.drawLinks = function (links, ctx, projection, style) {
     let color = style.colors[d.cat];
     ctx.globalAlpha = d.alpha;
     ctx.beginPath();
-    ctx.lineWidth = style["stroke-width"];
+    ctx.lineWidth = d.link_width;
     ctx.strokeStyle = color;
     ctx.setLineDash([d.total_length * d.t, d.total_length]);
     geoPath({type: "LineString", coordinates: [d.source.coor, d.target.coor] })
@@ -32,7 +32,7 @@ Render.drawLinks = function (links, ctx, projection, style) {
   function drawText(d) {
     if (drawn_places.some(d1 => isNear(d1, d))) return
     drawn_places.push(d)
-    ctx.textAlign = d.coor[0] > 0 ? "start" : "end";
+    ctx.textAlign = d.coor[0] > 0 && d.place !== "New Zealand" ? "start" : "end";
     ctx.font = 10+'px sans-serif';
 
     ctx.lineWidth = 2;

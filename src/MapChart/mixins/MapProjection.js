@@ -57,7 +57,7 @@ function geojsonCenter(d3_projection, geojson, dim) {
   const geoPath = d3.geoPath().projection(d3_projection);
 
   let b = geoPath.bounds(geojson),
-    k = 1.1 / Math.max((b[1][0] - b[0][0]) / dim.width, (b[1][1] - b[0][1]) / dim.height),
+    k = 1 / Math.max((b[1][0] - b[0][0]) / dim.width, (b[1][1] - b[0][1]) / dim.height),
     [x,y] = [(dim.width - k * (b[1][0] + b[0][0])) / 2, (dim.height - k * (b[1][1] + b[0][1])) / 2];
 
   return {x,y,k}

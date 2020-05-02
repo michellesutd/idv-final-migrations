@@ -15,6 +15,7 @@ Store.prototype.getData = async function () {
   self.places_data = await Data.loadPlacesData();
   self.world_map_geojson = await Data.getWorldMapGeoJson();
   self.links_by_year = Data.createLinksByYearSubRegions(self.data, self.places_data);
+  Data.setupLinkWidth(self.links_by_year)
   self.data_by_cat_years = Data.createTotalByCategoriesAndYears(self.data, self.places_data);
 }
 
@@ -79,5 +80,4 @@ Store.prototype.animate = function ({dur, state}) {
     }
   }
 }
-
 
