@@ -23,9 +23,9 @@ LineChart.prototype.draw = function() {
   const focused_category = self.store.focused_migration_category,
     [xValue, yValue] = [d => d.date, d => d.value],
     style = {
-      afr_to_eu: {color: focused_category === "afr_to_afr" ? "none" : "red"},
-      afr_to_afr: {color: focused_category === "afr_to_eu" ? "none" : "yellow"},
-      other_to_eu: {color: "blue"}
+      afr_to_eu: {color: "red"},
+      afr_to_afr: {color: focused_category === "other_to_eu" ? "none" : "yellow"},
+      other_to_eu: {color: focused_category === "afr_to_afr" ? "none" :"blue"}
     },
     orientation = self.config.orientation;
 

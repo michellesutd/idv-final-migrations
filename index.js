@@ -11,20 +11,21 @@ store.event.on("updateFocusedMigrationCategory", store.updateFocusedMigrationCat
 async  function initialize() {
   await store.getData();
   store.update()
-  let animateTroughYears
+  store.event.on("animate", store.animate.bind(store))
   {
     const cont = document.querySelector("#map_cont")
     const map = new Map(cont, store);
+    map.create()
+    // map.drawLinks()
+
     store.event.on("update", map.update.bind(map))
     store.event.on("updateSelectedYear", ({year, silent}) => !silent ? map.drawLinks() : null)
     store.event.on("updateFocusedMigrationCategory", map.drawLinks.bind(map))
-    map.create()
-    // map.drawLinks()
-    animateTroughYears = map.animateTroughYears.bind(map)
+    store.event.on("animate", map.animate.bind(map))
   }
   {
     const cont = document.querySelector("#area_cont_up")
-    const lineChart = new LineChart(cont, store, {categories: ["afr_to_afr", "afr_to_eu"], orientation: "up"});
+    const lineChart = new LineChart(cont, store, {categories: ["other_to_eu", "afr_to_afr"], orientation: "up"});
     lineChart.create()
     lineChart.draw()
     store.event.on("updateFocusedMigrationCategory", lineChart.draw.bind(lineChart));
@@ -38,10 +39,15 @@ async  function initialize() {
   }
   {
     const cont = document.querySelector("#area_cont_down")
-    const lineChart = new LineChart(cont, store, {categories: ["other_to_eu"], orientation: "down"});
+    const lineChart = new LineChart(cont, store, {categories: ["afr_to_eu"], orientation: "down"});
     lineChart.create()
     lineChart.draw()
   }
-  animateTroughYears()
+  {
+    document.querySelector("#replay_animation").addEventListener("click", function () {
+      store.event.trigger("animate", {dur: 2})
+    })
+  }
+  store.event.trigger("animate", {dur: 2})
 };
 document.addEventListener('DOMContentLoaded', initialize, false);

@@ -120,6 +120,7 @@ export default function Slider(cont, store) {
         .attr("y2", dim.height / 2)
         .attr("stroke-width", 60)
         .attr("stroke", "rgba(0,0,0,.2)")
+        .style("opacity", 0)
     }
     
     function findClosest(arr, n) {

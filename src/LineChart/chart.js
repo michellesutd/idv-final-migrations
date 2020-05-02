@@ -57,6 +57,12 @@ function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style, orientation)
 
     main_g.append("path")
       .attr("class", "area")
+      .style("fill", "#fff")
+      .style("stroke-width", 0)
+      .attr("d", area(data));
+
+    main_g.append("path")
+      .attr("class", "area")
       .style("fill", style.color)
       .style("fill-opacity", .2)
       .style("stroke-width", 0)
@@ -77,6 +83,7 @@ function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style, orientation)
 
   function drawAxis() {
     const axis_g = svg.select("g.axis_g")
+    axis_g.html("")
     axis_g.append("g")
       .attr("class", "axis axis--y")
       .attr("transform", "translate(" + (dim.ml + dim.width) + "," + dim.mt + ")")
@@ -94,6 +101,7 @@ export default {
   updateElements,
   draw,
 }
+
 
 
 

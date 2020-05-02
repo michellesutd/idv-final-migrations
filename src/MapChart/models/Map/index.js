@@ -3,12 +3,15 @@ import Style from "./style.js"
 import Dom from "./dom.js"
 import Render from "./render.js"
 import Data from "./data.js"
+import Animate from "./animate.js";
+
 export default function Map(cont, store) {
   const self = this;
 
   self.cont = cont;
   self.store = store;
   Dom.setupCont(self.cont)
+  self.animation = new Animate()
 }
 
 Map.prototype.create = function () {
@@ -65,72 +68,29 @@ Map.prototype.drawLinks = function () {
   Render.drawLinks(links, ctx, projection, style);
 }
 
-Map.prototype.animateTroughYears = function () {
+Map.prototype.animate = function ({dur, state}) {
   const self = this;
   let ctx = self.ctx2,
     dim = self.dim,
     projection = self.d3_projection,
     links_by_year = self.store.links_by_year,
     all_links = d3.merge(Object.values(links_by_year)),
-    years = Object.keys(links_by_year),
     style = Style.links,
-    dur = 2,
-    mouseOverLinkF = cat => self.store.event.trigger("updateFocusedMigrationCategory", cat);
-  self.stopAnimation()
-  self.animating = true
-  calculatePathLens();
-  animateHistogramMask()
+    drawLinks = () => Render.drawLinks(all_links, ctx, projection, style)
 
-  for (let i = 0; i < years.length; i++) {
-    const links = links_by_year[years[i]],
-      delay_spread = dur/(links.length-1)
-
-    for (let j = 0; j < links.length; j++) {
-      const d = links[j],
-        delay = dur*i + (j*delay_spread)
-      d.t = 0;
-      d.alpha = 1;
-      gsap.to(d, dur, {t: 1, delay})
-      if (i < years.length-1) gsap.to(d, 1.5, {alpha: 0, delay: delay+1.5})
-    }
+  if (state && state === "stop") self.animation.stopAnimation()
+  else {
+    calculateAllPathLens()
+    self.animation.startAnimation(ctx, dim, links_by_year, dur, drawLinks)
   }
 
-  self.timer = d3.timer(tick)
-  function tick(t) {
-    if (t > 20*1000) self.stopAnimation()
-    ctx.clearRect(0,0,dim.width, dim.height);
-    Render.drawLinks(all_links, ctx, projection, style);
-  }
-
-  function calculatePathLens() {
+  function calculateAllPathLens() {
     for (let year in links_by_year) {
       if (!links_by_year.hasOwnProperty(year)) continue
       self.calculateLinksLengthAndSetupLinksInteraction(year)
     }
   }
 
-  function animateHistogramMask() {
-    console.log(document.querySelectorAll("defs rect"))
-    document.querySelectorAll("defs rect").forEach(function (el) {
-      console.log(el)
-      gsap.to(el, years.length*dur+dur, {
-        attr:{x: 0},
-        ease: "none",
-        onComplete() {
-          setTimeout(() => {
-            self.store.event.trigger("updateSelectedYear", {year: years[years.length-1]})
-            gsap.to(".slider .handle", .5, {alpha: 1})
-            self.stopAnimation()
-          }, 2000)
-        },
-      })
-    })
-  }
-}
-
-Map.prototype.stopAnimation = function() {
-  this.animating = false;
-  if (this.timer) this.timer.stop()
 }
 
 Map.prototype.calculateLinksLengthAndSetupLinksInteraction = function(year) {
@@ -144,6 +104,11 @@ Map.prototype.calculateLinksLengthAndSetupLinksInteraction = function(year) {
     Dom.calculateLinksLengthAndSetupLinksInteraction(self.svg, links, projection, mouseOverLinkF)
   }
 }
+
+
+
+
+
 
 
 
