@@ -94,7 +94,6 @@ Data.createLinksByYearSubRegions = function (data, places_data) {
       }
 
     }
-    console.log(links_by_year_sub_to_sub)
     return links_by_year_sub_to_sub
   }
 
@@ -133,11 +132,10 @@ Data.createLinksByYearSubRegions = function (data, places_data) {
 }
 
 Data.getWorldMapGeoJson = async function () {
-  let world_map_url = "./data/world.50.geo.json",
+  let world_map_url = "./data/world.50-simplified.geo.json",
     world_map_geo_json = await fetch(world_map_url).then(resp => resp.json());
 
   world_map_geo_json = topojson.feature(world_map_geo_json,world_map_geo_json.objects["world.50"])
-  console.log(world_map_geo_json)
   return world_map_geo_json
 }
 
@@ -146,7 +144,6 @@ Data.getWorldMapLandGeoJson = async function () {
     world_map_geo_json = await fetch(world_map_url).then(resp => resp.json());
 
   world_map_geo_json = {features: [world_map_geo_json]}
-  console.log(world_map_geo_json)
   return world_map_geo_json
 }
 
@@ -166,7 +163,6 @@ Data.createTotalByCategoriesAndYears = function (data, places_data) {
     data_by_cat_years.afr_to_afr[year] = 0
 
     const year_data = data_by_years[year];
-    console.log(year_data)
     for (let i = 0; i < year_data.length; i++) {
       const datum = year_data[i];
       data_by_cat_years.afr_to_eu[year] += addIf(datum, d => d === "Africa", d => d === "Asia")
@@ -205,7 +201,4 @@ function group(data, classGetter) {
     dct[k].push(v)
   }
 }
-
-
-
 

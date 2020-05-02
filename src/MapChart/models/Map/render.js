@@ -51,8 +51,58 @@ Render.drawLinks = function (links, ctx, projection, style) {
       && Math.abs(coor1[0] - coor2[0]) < d1.place.length*8
     )
   }
-  console.log(drawn_places)
 }
+
+Render.drawDottedMapBg = function (geojson, ctx, projection, dim) {
+  const geoPath = d3.geoPath().projection(projection);
+  geoPath.context(ctx)
+
+  ctx.save();
+  ctx.beginPath();
+  geoPath(geojson);
+  ctx.clip();
+  drawDots();
+  ctx.restore()
+
+
+  function drawDots() {
+    let r = 3, x = r, y = r, padd = r*3
+    while (x < dim.width) {
+      y = padd
+      while (y < dim.height) {
+        drawCircle()
+        y+=padd;
+      }
+      x+=padd;
+    }
+
+    function drawCircle() {
+      ctx.fillStyle = "lightgrey";
+      ctx.beginPath();
+      ctx.arc(x, y, r, 0, 2 * Math.PI);
+      ctx.fill();
+    }
+  }
+
+}
+
+Render.drawSideLowerText = function (ctx, dim) {
+  const text = "DATA SOURCE | International Migrant Stock, UNDESA, 2019";
+
+  ctx.textAlign = "start";
+  ctx.font = 10+'px sans-serif';
+  ctx.fillStyle = "black";
+  ctx.fillText(text, 10, dim.height-10);
+}
+
+
+
+
+
+
+
+
+
 
 
 

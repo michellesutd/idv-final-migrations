@@ -45,7 +45,8 @@ Map.prototype.drawBg = function () {
     projection = self.d3_projection
 
   ctx.clearRect(0,0,dim.width, dim.height)
-  MapChart.polygons.drawMultiple(self.world_map_geojson.features, d => d, ctx, projection, Style.world_map_bg)
+  Render.drawDottedMapBg(self.world_map_geojson, ctx, projection, dim)
+  Render.drawSideLowerText(ctx, dim)
 }
 
 Map.prototype.drawLinks = function () {
@@ -104,12 +105,6 @@ Map.prototype.calculateLinksLengthAndSetupLinksInteraction = function(year) {
     Dom.calculateLinksLengthAndSetupLinksInteraction(self.svg, links, projection, mouseOverLinkF)
   }
 }
-
-
-
-
-
-
 
 
 
