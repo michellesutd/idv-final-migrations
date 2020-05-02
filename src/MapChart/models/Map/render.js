@@ -30,8 +30,8 @@ Render.drawLinks = function (links, ctx, projection, style) {
   }
 
   function drawText(d) {
-    if (drawn_places.indexOf(d.place) !== -1) return
-    drawn_places.push(d.place)
+    if (drawn_places.some(d1 => isNear(d1, d))) return
+    drawn_places.push(d)
     ctx.textAlign = d.coor[0] > 0 ? "start" : "end";
     ctx.font = 10+'px sans-serif';
 
@@ -43,6 +43,15 @@ Render.drawLinks = function (links, ctx, projection, style) {
     ctx.fillStyle = "black";
     ctx.fillText(d.place, ...projection(d.coor));
   }
+
+  function isNear(d1, d2) {
+    const [coor1, coor2] = [d1.coor, d2.coor].map(coor => projection(coor))
+    return (
+      Math.abs(coor1[1] - coor2[1]) < 15
+      && Math.abs(coor1[0] - coor2[0]) < d1.place.length*8
+    )
+  }
+  console.log(drawn_places)
 }
 
 

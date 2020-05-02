@@ -50,7 +50,6 @@ Store.prototype.animate = function ({dur, state}) {
     animateHandleVisibility({dur:.5, delay:full_duration})
   }
   function animateHistogramMask({dur, delay}) {
-    console.log(mask_rects)
     mask_rects.forEach(function (el) {
       const width = el.getAttribute("width")
       el.setAttribute("x", -width+"")

@@ -17,12 +17,12 @@ export default function Map(cont, store) {
 Map.prototype.create = function () {
   const self = this;
 
-  self.d3_projection = MapChart.projection.setup({})
-  self.d3_projection.scale(170)
-  self.d3_projection.translate([ 550, 350 ])
   self.dim = Style.setupDims(self.cont.getBoundingClientRect());
-  [self.canvas1, self.ctx1] = Dom.setupCanvas(self.cont, self.dim);
-  [self.canvas2, self.ctx2] = Dom.setupCanvas(self.cont, self.dim);
+  self.d3_projection = MapChart.projection.setup({})
+  const t = MapChart.projection.geojsonCenter(self.d3_projection, self.store.world_map_geojson, self.dim);
+  MapChart.projection.updateProjection(self.d3_projection, t)
+  ;[self.canvas1, self.ctx1] = Dom.setupCanvas(self.cont, self.dim);
+  ;[self.canvas2, self.ctx2] = Dom.setupCanvas(self.cont, self.dim);
   self.svg = Dom.setupOverlaySvg(self.cont, self.dim);
   self.world_map_geojson = self.store.world_map_geojson;
   self.drawBg();
