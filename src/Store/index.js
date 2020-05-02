@@ -80,11 +80,4 @@ Store.prototype.animate = function ({dur, state}) {
   }
 }
 
-Store.prototype.addTween = 
 
-Store.prototype.animationStop = function () {
-  const self = this;
-  gsap.to(".slider .handle", .5, {alpha: 1})
-  self.store.event.trigger("updateSelectedYear", {year: years[years.length-1]})
-
-}

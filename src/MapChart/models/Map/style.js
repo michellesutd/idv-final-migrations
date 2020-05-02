@@ -21,10 +21,11 @@ Style.points = {
 }
 
 Style.links = {
-  "stroke-width": .3,
+  "stroke-width": .8,
   colors: {
     afr_to_eu: "red",
     other_to_eu: "blue",
     afr_to_afr: "darkgreen"
   }
 }
+

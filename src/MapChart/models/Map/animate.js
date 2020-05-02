@@ -15,7 +15,7 @@ export default function Animate() {
     const self = this;
   
     const years = Object.keys(links_by_year),
-      full_duration_ms = (years.length*dur+dur)*1000;
+      full_duration_ms = (years.length*dur+dur+dur)*1000;
     self.stopAnimation()
     self.animateLinks(years, links_by_year, dur);
     self.startTimer(ctx, dim, full_duration_ms, drawLinks)
