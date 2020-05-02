@@ -60,7 +60,7 @@ function geojsonCenter(d3_projection, geojson, dim) {
     k = 1.1 / Math.max((b[1][0] - b[0][0]) / dim.width, (b[1][1] - b[0][1]) / dim.height),
     [x,y] = [(dim.width - k * (b[1][0] + b[0][0])) / 2, (dim.height - k * (b[1][1] + b[0][1])) / 2];
 
-  return {x,y:y*.9,k}
+  return {x,y,k}
 }
 
 function zoomToParcels({data, zoomable_node, d3_projection, d3_zoom, dim, key__geom, opt}) {
@@ -137,3 +137,4 @@ export default {
   zoomToParcels,
   geojsonCenter
 }
+

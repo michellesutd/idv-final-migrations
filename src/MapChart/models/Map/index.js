@@ -18,7 +18,7 @@ Map.prototype.create = function () {
   const self = this;
 
   self.dim = Style.setupDims(self.cont.getBoundingClientRect());
-  self.d3_projection = MapChart.projection.setup({})
+  self.d3_projection = MapChart.projection.setup({projection_type: "geoNaturalEarth1"})
   const t = MapChart.projection.geojsonCenter(self.d3_projection, self.store.world_map_geojson, self.dim);
   MapChart.projection.updateProjection(self.d3_projection, t)
   ;[self.canvas1, self.ctx1] = Dom.setupCanvas(self.cont, self.dim);
@@ -42,11 +42,15 @@ Map.prototype.drawBg = function () {
   const self = this;
   const ctx = self.ctx1,
     dim = self.dim,
-    projection = self.d3_projection
+    projection = self.d3_projection,
+    legend_data = self.store.data_by_cat_years,
+    svg = self.svg,
+    colors = Style.links.colors,
+    mouseOverLinkF = cat => self.store.event.trigger("updateFocusedMigrationCategory", cat)
 
   ctx.clearRect(0,0,dim.width, dim.height)
   Render.drawDottedMapBg(self.world_map_geojson, ctx, projection, dim)
-  Render.drawSideLowerText(ctx, dim)
+  Dom.setupLegend(legend_data, "2019", svg, dim, colors, mouseOverLinkF)
 }
 
 Map.prototype.drawLinks = function () {

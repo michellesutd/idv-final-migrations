@@ -49,6 +49,6 @@ async  function initialize() {
     })
   }
   store.event.trigger("animate", {dur: 2})
-  // store.event.trigger("animate", {dur: 2, state: "stop"})
+  store.event.trigger("animate", {dur: 2, state: "stop"})
 };
 document.addEventListener('DOMContentLoaded', initialize, false);

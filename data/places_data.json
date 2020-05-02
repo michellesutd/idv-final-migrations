@@ -1,1 +1,2090 @@
-{"Afghanistan":{"place":"Afghanistan","coor":[66.2385139,33.7680065],"geo_region":"Asia","sub_region":"Southern Asia"},"Albania":{"place":"Albania","coor":[19.9999619,41.000028],"geo_region":"Europe","sub_region":"Southern Europe"},"Algeria":{"place":"Algeria","coor":[2.9999825,28.0000272],"geo_region":"Africa","sub_region":"Northern Africa"},"American Samoa":{"place":"American Samoa","coor":[-170.692511,-14.289304],"geo_region":"Ocenia","sub_region":"Polynesia"},"Andorra":{"place":"Andorra","coor":[1.5732033,42.5407167],"geo_region":"Europe","sub_region":"Southern Europe"},"Angola":{"place":"Angola","coor":[17.5691241,-11.8775768],"geo_region":"Africa","sub_region":"Middle Africa"},"Anguilla":{"place":"Anguilla","coor":[-63.0750234,18.1954947],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Antigua and Barbuda":{"place":"Antigua and Barbuda","coor":[-61.9554608,17.2234721],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Argentina":{"place":"Argentina","coor":[-64.9672817,-34.9964963],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"Armenia":{"place":"Armenia","coor":[44.6736646,40.7696272],"geo_region":"Asia","sub_region":"Western Asia"},"Aruba":{"place":"Aruba","coor":[-69.9609842,12.4902998],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Australia":{"place":"Australia","coor":[134.755,-24.7761086],"geo_region":"Ocenia","sub_region":"Australia / New Zealand"},"Austria":{"place":"Austria","coor":[13.199959,47.2000338],"geo_region":"Europe","sub_region":"Western Europe"},"Azerbaijan":{"place":"Azerbaijan","coor":[47.7872508,40.3936294],"geo_region":"Asia","sub_region":"Western Asia"},"Bahamas":{"place":"Bahamas","coor":[-78.0000547,24.7736546],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Bahrain":{"place":"Bahrain","coor":[50.5344606,26.1551249],"geo_region":"Asia","sub_region":"Western Asia"},"Bangladesh":{"place":"Bangladesh","coor":[90.2932426,24.4768783],"geo_region":"Asia","sub_region":"Southern Asia"},"Barbados":{"place":"Barbados","coor":[-59.5250305,13.1500331],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Belarus":{"place":"Belarus","coor":[27.6971358,53.4250605],"geo_region":"Europe","sub_region":"Eastern Europe"},"Belgium":{"place":"Belgium","coor":[4.6667145,50.6402809],"geo_region":"Europe","sub_region":"Western Europe"},"Belize":{"place":"Belize","coor":[-88.7600927,16.8259793],"geo_region":"Latin America and the Caribbean","sub_region":"Central America"},"Benin":{"place":"Benin","coor":[2.2584408,9.5293472],"geo_region":"Africa","sub_region":"Western Africa"},"Bermuda":{"place":"Bermuda","coor":[-64.7603583,32.3018217],"geo_region":"North America","sub_region":"NORTHERN AMERICA"},"Bhutan":{"place":"Bhutan","coor":[90.5119273,27.549511],"geo_region":"Asia","sub_region":"Southern Asia"},"Bolivia (Plurinational State of)":{"place":"Bolivia (Plurinational State of)","coor":[-64.9912286,-17.0568696],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"Bonaire, Sint Eustatius and Saba":{"place":"Bonaire, Sint Eustatius and Saba","coor":[-68.29096143734236,12.167],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Bosnia and Herzegovina":{"place":"Bosnia and Herzegovina","coor":[17.5961467,44.3053476],"geo_region":"Europe","sub_region":"Southern Europe"},"Botswana":{"place":"Botswana","coor":[24.5928742,-23.1681782],"geo_region":"Africa","sub_region":"Southern Africa"},"Brazil":{"place":"Brazil","coor":[-53.2,-10.3333333],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"British Virgin Islands":{"place":"British Virgin Islands","coor":[-64.5661642,18.4024395],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Brunei Darussalam":{"place":"Brunei Darussalam","coor":[114.5653908,4.4137155],"geo_region":"Asia","sub_region":"South-Eastern Asia"},"Bulgaria":{"place":"Bulgaria","coor":[25.4856617,42.6073975],"geo_region":"Europe","sub_region":"Eastern Europe"},"Burkina Faso":{"place":"Burkina Faso","coor":[-1.6880314,12.0753083],"geo_region":"Africa","sub_region":"Western Africa"},"Burundi":{"place":"Burundi","coor":[29.8870575,-3.3634357],"geo_region":"Africa","sub_region":"Eastern Africa"},"Cabo Verde":{"place":"Cabo Verde","coor":[-24.0083947,16.0000552],"geo_region":"Africa","sub_region":"Western Africa"},"Cambodia":{"place":"Cambodia","coor":[104.869423,13.5066394],"geo_region":"Asia","sub_region":"South-Eastern Asia"},"Cameroon":{"place":"Cameroon","coor":[13.1535811,4.6125522],"geo_region":"Africa","sub_region":"Middle Africa"},"Canada":{"place":"Canada","coor":[-107.9917071,61.0666922],"geo_region":"North America","sub_region":"NORTHERN AMERICA"},"Cayman Islands":{"place":"Cayman Islands","coor":[-80.5667132,19.5417212],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Central African Republic":{"place":"Central African Republic","coor":[19.9981227,7.0323598],"geo_region":"Africa","sub_region":"Middle Africa"},"Chad":{"place":"Chad","coor":[19.0156172,15.6134137],"geo_region":"Africa","sub_region":"Middle Africa"},"Channel Islands":{"place":"Channel Islands","coor":[-145.7996671,60.6167942],"geo_region":"Europe","sub_region":"Northern Europe"},"Chile":{"place":"Chile","coor":[-71.3187697,-31.7613365],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"China":{"place":"China","coor":[104.999927,35.000074],"geo_region":"Asia","sub_region":"Eastern Asia"},"China, Hong Kong SAR":{"place":"China, Hong Kong SAR","coor":[22.3524825,113.8475072],"geo_region":"Asia","sub_region":"Eastern Asia"},"China, Macao SAR":{"place":"China, Macao SAR","coor":[22.1618283,113.5351333],"geo_region":"Asia","sub_region":"Eastern Asia"},"Colombia":{"place":"Colombia","coor":[-73.783892,2.8894434],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"Comoros":{"place":"Comoros","coor":[44.2832964,-12.2045176],"geo_region":"Africa","sub_region":"Eastern Africa"},"Congo":{"place":"Congo","coor":[15.6419155,-0.7264327],"geo_region":"Africa","sub_region":"Middle Africa"},"Cook Islands":{"place":"Cook Islands","coor":[-160.3554851,-16.0492781],"geo_region":"Ocenia","sub_region":"Polynesia"},"Costa Rica":{"place":"Costa Rica","coor":[-84.0739102,10.2735633],"geo_region":"Latin America and the Caribbean","sub_region":"Central America"},"Côte d'Ivoire":{"place":"Côte d'Ivoire","coor":[-5.5679458,7.9897371],"geo_region":"Africa","sub_region":"Western Africa"},"Croatia":{"place":"Croatia","coor":[17.0118954,45.5643442],"geo_region":"Europe","sub_region":"Southern Europe"},"Cuba":{"place":"Cuba","coor":[-80.8328748,23.0131338],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Curaçao":{"place":"Curaçao","coor":[-68.9640875031406,12.1845],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Cyprus":{"place":"Cyprus","coor":[33.1451285,34.9823018],"geo_region":"Asia","sub_region":"Western Asia"},"Czechia":{"place":"Czechia","coor":[15.4749544,49.8167003],"geo_region":"Europe","sub_region":"Eastern Europe"},"Dem. People's Republic of Korea":{"place":"Dem. People's Republic of Korea","coor":[40.2787386,125.1813511],"geo_region":"Asia","sub_region":"Eastern Asia"},"Democratic Republic of the Congo":{"place":"Democratic Republic of the Congo","coor":[23.8222636,-2.9814344],"geo_region":"Africa","sub_region":"Middle Africa"},"Denmark":{"place":"Denmark","coor":[10.3333283,55.670249],"geo_region":"Europe","sub_region":"Northern Europe"},"Djibouti":{"place":"Djibouti","coor":[42.8453061,11.8145966],"geo_region":"Africa","sub_region":"Eastern Africa"},"Dominica":{"place":"Dominica","coor":[-70.3028026,19.0974031],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Dominican Republic":{"place":"Dominican Republic","coor":[-70.3028026,19.0974031],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Ecuador":{"place":"Ecuador","coor":[-79.3666965,-1.3397668],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"Egypt":{"place":"Egypt","coor":[29.2675469,26.2540493],"geo_region":"Africa","sub_region":"Northern Africa"},"El Salvador":{"place":"El Salvador","coor":[-88.9140683,13.8000382],"geo_region":"Latin America and the Caribbean","sub_region":"Central America"},"Equatorial Guinea":{"place":"Equatorial Guinea","coor":[10.5170357,1.613172],"geo_region":"Africa","sub_region":"Middle Africa"},"Eritrea":{"place":"Eritrea","coor":[37.9999668,15.9500319],"geo_region":"Africa","sub_region":"Eastern Africa"},"Estonia":{"place":"Estonia","coor":[25.3319078,58.7523778],"geo_region":"Europe","sub_region":"Northern Europe"},"Eswatini":{"place":"Eswatini","coor":[31.3991317,-26.5624806],"geo_region":"Africa","sub_region":"Southern Africa"},"Ethiopia":{"place":"Ethiopia","coor":[38.6521203,10.2116702],"geo_region":"Africa","sub_region":"Eastern Africa"},"Falkland Islands (Malvinas)":{"place":"Falkland Islands (Malvinas)","coor":[-59.5500387,-51.9666424],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"Faroe Islands":{"place":"Faroe Islands","coor":[-7.0322972,62.0448724],"geo_region":"Europe","sub_region":"Northern Europe"},"Fiji":{"place":"Fiji","coor":[179.0122737,-18.1239696],"geo_region":"Ocenia","sub_region":"Melanesia"},"Finland":{"place":"Finland","coor":[25.9209164,63.2467777],"geo_region":"Europe","sub_region":"Northern Europe"},"France":{"place":"France","coor":[1.8883335,46.603354],"geo_region":"Europe","sub_region":"Western Europe"},"French Guiana":{"place":"French Guiana","coor":[-52.999998,4.0039882],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"French Polynesia":{"place":"French Polynesia","coor":[-146.0490931059517,-16.03442485],"geo_region":"Ocenia","sub_region":"Polynesia"},"Gabon":{"place":"Gabon","coor":[11.6899699,-0.8999695],"geo_region":"Africa","sub_region":"Middle Africa"},"Gambia":{"place":"Gambia","coor":[-15.4900464,13.470062],"geo_region":"Africa","sub_region":"Western Africa"},"Georgia":{"place":"Georgia","coor":[-83.1137366,32.3293809],"geo_region":"Asia","sub_region":"Western Asia"},"Germany":{"place":"Germany","coor":[10.4234469,51.0834196],"geo_region":"Europe","sub_region":"Western Europe"},"Ghana":{"place":"Ghana","coor":[-1.0800271,8.0300284],"geo_region":"Africa","sub_region":"Western Africa"},"Gibraltar":{"place":"Gibraltar","coor":[-5.335277183483561,36.10674695],"geo_region":"Europe","sub_region":"Southern Europe"},"Greece":{"place":"Greece","coor":[21.9877132,38.9953683],"geo_region":"Europe","sub_region":"Southern Europe"},"Greenland":{"place":"Greenland","coor":[-42.8125967,77.6192349],"geo_region":"North America","sub_region":"NORTHERN AMERICA"},"Grenada":{"place":"Grenada","coor":[-61.6904045,12.1360374],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Guadeloupe":{"place":"Guadeloupe","coor":[-61.5650444,16.2490067],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Guam":{"place":"Guam","coor":[144.75755102972062,13.450125700000001],"geo_region":"Ocenia","sub_region":"Micronesia"},"Guatemala":{"place":"Guatemala","coor":[-89.8988087,15.6356088],"geo_region":"Latin America and the Caribbean","sub_region":"Central America"},"Guinea":{"place":"Guinea","coor":[-10.7083587,10.7226226],"geo_region":"Africa","sub_region":"Western Africa"},"Guinea-Bissau":{"place":"Guinea-Bissau","coor":[-14.9000214,12.100035],"geo_region":"Africa","sub_region":"Western Africa"},"Guyana":{"place":"Guyana","coor":[-58.6416891,4.8417097],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"Haiti":{"place":"Haiti","coor":[-72.3570972,19.1399952],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Holy See":{"place":"Holy See","coor":[-77.06572732690151,38.9247244],"geo_region":"Europe","sub_region":"Southern Europe"},"Honduras":{"place":"Honduras","coor":[-86.0755145,15.2572432],"geo_region":"Latin America and the Caribbean","sub_region":"Central America"},"Hungary":{"place":"Hungary","coor":[19.5060937,47.1817585],"geo_region":"Europe","sub_region":"Eastern Europe"},"Iceland":{"place":"Iceland","coor":[-18.1059013,64.9841821],"geo_region":"Europe","sub_region":"Northern Europe"},"India":{"place":"India","coor":[78.6677428,22.3511148],"geo_region":"Asia","sub_region":"Southern Asia"},"Indonesia":{"place":"Indonesia","coor":[117.8902853,-2.4833826],"geo_region":"Asia","sub_region":"South-Eastern Asia"},"Iran (Islamic Republic of)":{"place":"Iran (Islamic Republic of)","coor":[54.5643516,32.6475314],"geo_region":"Asia","sub_region":"Southern Asia"},"Iraq":{"place":"Iraq","coor":[44.1749775,33.0955793],"geo_region":"Asia","sub_region":"Western Asia"},"Ireland":{"place":"Ireland","coor":[-7.9794599,52.865196],"geo_region":"Europe","sub_region":"Northern Europe"},"Isle of Man":{"place":"Isle of Man","coor":[-4.514598745698255,54.2358167],"geo_region":"Europe","sub_region":"Northern Europe"},"Israel":{"place":"Israel","coor":[34.8667654,31.5313113],"geo_region":"Asia","sub_region":"Western Asia"},"Italy":{"place":"Italy","coor":[12.674297,42.6384261],"geo_region":"Europe","sub_region":"Southern Europe"},"Jamaica":{"place":"Jamaica","coor":[-77.1598454610168,18.1152958],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Japan":{"place":"Japan","coor":[139.2394179,36.5748441],"geo_region":"Asia","sub_region":"Eastern Asia"},"Jordan":{"place":"Jordan","coor":[36.941628,31.1667049],"geo_region":"Asia","sub_region":"Western Asia"},"Kazakhstan":{"place":"Kazakhstan","coor":[65.2093197,47.2286086],"geo_region":"Asia","sub_region":"Central Asia"},"Kenya":{"place":"Kenya","coor":[38.4313975,1.4419683],"geo_region":"Africa","sub_region":"Eastern Africa"},"Kiribati":{"place":"Kiribati","coor":[173.664834025,0.306],"geo_region":"Ocenia","sub_region":"Micronesia"},"Kuwait":{"place":"Kuwait","coor":[47.4979476,29.2733964],"geo_region":"Asia","sub_region":"Western Asia"},"Kyrgyzstan":{"place":"Kyrgyzstan","coor":[74.724091,41.5089324],"geo_region":"Asia","sub_region":"Central Asia"},"Lao People's Democratic Republic":{"place":"Lao People's Democratic Republic","coor":[103.378253,20.0171109],"geo_region":"Asia","sub_region":"South-Eastern Asia"},"Latvia":{"place":"Latvia","coor":[24.7537645,56.8406494],"geo_region":"Europe","sub_region":"Northern Europe"},"Lebanon":{"place":"Lebanon","coor":[35.843409,33.8750629],"geo_region":"Asia","sub_region":"Western Asia"},"Lesotho":{"place":"Lesotho","coor":[28.3350193,-29.6039267],"geo_region":"Africa","sub_region":"Southern Africa"},"Liberia":{"place":"Liberia","coor":[-9.3658524,5.7499721],"geo_region":"Africa","sub_region":"Western Africa"},"Libya":{"place":"Libya","coor":[18.1236723,26.8234472],"geo_region":"Africa","sub_region":"Northern Africa"},"Liechtenstein":{"place":"Liechtenstein","coor":[9.5531527,47.1416307],"geo_region":"Europe","sub_region":"Western Europe"},"Lithuania":{"place":"Lithuania","coor":[23.7499997,55.3500003],"geo_region":"Europe","sub_region":"Northern Europe"},"Luxembourg":{"place":"Luxembourg","coor":[6.1296751,49.8158683],"geo_region":"Europe","sub_region":"Western Europe"},"Madagascar":{"place":"Madagascar","coor":[46.4416422,-18.9249604],"geo_region":"Africa","sub_region":"Eastern Africa"},"Malawi":{"place":"Malawi","coor":[33.9301963,-13.2687204],"geo_region":"Africa","sub_region":"Eastern Africa"},"Malaysia":{"place":"Malaysia","coor":[102.2656823,4.5693754],"geo_region":"Asia","sub_region":"South-Eastern Asia"},"Maldives":{"place":"Maldives","coor":[73.3287853,4.7064352],"geo_region":"Asia","sub_region":"Southern Asia"},"Mali":{"place":"Mali","coor":[-2.2900239,16.3700359],"geo_region":"Africa","sub_region":"Western Africa"},"Malta":{"place":"Malta","coor":[14.4476911,35.8885993],"geo_region":"Europe","sub_region":"Southern Europe"},"Marshall Islands":{"place":"Marshall Islands","coor":[168,9],"geo_region":"Ocenia","sub_region":"Micronesia"},"Martinique":{"place":"Martinique","coor":[-61.01582685063731,14.6367927],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Mauritania":{"place":"Mauritania","coor":[-9.2399263,20.2540382],"geo_region":"Africa","sub_region":"Western Africa"},"Mauritius":{"place":"Mauritius","coor":[57.5703566,-20.2759451],"geo_region":"Africa","sub_region":"Eastern Africa"},"Mayotte":{"place":"Mayotte","coor":[45.1520755,-12.823048],"geo_region":"Africa","sub_region":"Eastern Africa"},"Mexico":{"place":"Mexico","coor":[-99.1331785,19.4326296],"geo_region":"Latin America and the Caribbean","sub_region":"Central America"},"Micronesia (Fed. States of)":{"place":"Micronesia (Fed. States of)","coor":[6.8817573,158.1984488],"geo_region":"Ocenia","sub_region":"Micronesia"},"Monaco":{"place":"Monaco","coor":[7.424224092532953,43.73844905],"geo_region":"Europe","sub_region":"Western Europe"},"Mongolia":{"place":"Mongolia","coor":[103.8499736,46.8250388],"geo_region":"Asia","sub_region":"Eastern Asia"},"Montenegro":{"place":"Montenegro","coor":[19.5180992,42.9868853],"geo_region":"Europe","sub_region":"Southern Europe"},"Montserrat":{"place":"Montserrat","coor":[-62.1916844,16.7417041],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Morocco":{"place":"Morocco","coor":[-7.3362482,31.1728205],"geo_region":"Africa","sub_region":"Northern Africa"},"Mozambique":{"place":"Mozambique","coor":[34.9144977,-19.302233],"geo_region":"Africa","sub_region":"Eastern Africa"},"Myanmar":{"place":"Myanmar","coor":[95.9999652,17.1750495],"geo_region":"Asia","sub_region":"South-Eastern Asia"},"Namibia":{"place":"Namibia","coor":[17.3231107,-23.2335499],"geo_region":"Africa","sub_region":"Southern Africa"},"Nauru":{"place":"Nauru","coor":[166.9324426,-0.5252306],"geo_region":"Ocenia","sub_region":"Micronesia"},"Nepal":{"place":"Nepal","coor":[84.0917139,28.1083929],"geo_region":"Asia","sub_region":"Southern Asia"},"Netherlands":{"place":"Netherlands","coor":[5.7480821,52.5001698],"geo_region":"Europe","sub_region":"Western Europe"},"New Caledonia":{"place":"New Caledonia","coor":[164.55660583077983,-20.454288599999998],"geo_region":"Ocenia","sub_region":"Melanesia"},"New Zealand":{"place":"New Zealand","coor":[172.8344077,-41.5000831],"geo_region":"Ocenia","sub_region":"Australia / New Zealand"},"Nicaragua":{"place":"Nicaragua","coor":[-85.2936911,12.6090157],"geo_region":"Latin America and the Caribbean","sub_region":"Central America"},"Niger":{"place":"Niger","coor":[9.3238432,17.7356214],"geo_region":"Africa","sub_region":"Western Africa"},"Nigeria":{"place":"Nigeria","coor":[7.9999721,9.6000359],"geo_region":"Africa","sub_region":"Western Africa"},"Niue":{"place":"Niue","coor":[-169.8613411,-19.0536414],"geo_region":"Ocenia","sub_region":"Polynesia"},"North Macedonia":{"place":"North Macedonia","coor":[21.7168387,41.6171214],"geo_region":"Europe","sub_region":"Southern Europe"},"Northern Mariana Islands":{"place":"Northern Mariana Islands","coor":[145.21345248318923,14.149020499999999],"geo_region":"Ocenia","sub_region":"Micronesia"},"Norway":{"place":"Norway","coor":[11.52803643954819,64.5731537],"geo_region":"Europe","sub_region":"Northern Europe"},"Oman":{"place":"Oman","coor":[57.0036901,21.0000287],"geo_region":"Asia","sub_region":"Western Asia"},"Pakistan":{"place":"Pakistan","coor":[71.247499,30.3308401],"geo_region":"Asia","sub_region":"Southern Asia"},"Palau":{"place":"Palau","coor":[133.313631,6.097367],"geo_region":"Ocenia","sub_region":"Micronesia"},"Panama":{"place":"Panama","coor":[-81.1308434,8.559559],"geo_region":"Latin America and the Caribbean","sub_region":"Central America"},"Papua New Guinea":{"place":"Papua New Guinea","coor":[144.2489081,-5.6816069],"geo_region":"Ocenia","sub_region":"Melanesia"},"Paraguay":{"place":"Paraguay","coor":[-58.1693445,-23.3165935],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"Peru":{"place":"Peru","coor":[-75.0458515,-6.8699697],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"Philippines":{"place":"Philippines","coor":[122.7312101,12.7503486],"geo_region":"Asia","sub_region":"South-Eastern Asia"},"Poland":{"place":"Poland","coor":[19.134422,52.215933],"geo_region":"Europe","sub_region":"Eastern Europe"},"Portugal":{"place":"Portugal","coor":[-7.8896263,40.0332629],"geo_region":"Europe","sub_region":"Southern Europe"},"Puerto Rico":{"place":"Puerto Rico","coor":[-66.41328179513847,18.2214149],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Qatar":{"place":"Qatar","coor":[51.2295295,25.3336984],"geo_region":"Asia","sub_region":"Western Asia"},"Republic of Korea":{"place":"Republic of Korea","coor":[127.6961188,36.638392],"geo_region":"Asia","sub_region":"Eastern Asia"},"Republic of Moldova":{"place":"Republic of Moldova","coor":[28.5670941,47.2879608],"geo_region":"Europe","sub_region":"Eastern Europe"},"Réunion":{"place":"Réunion","coor":[55.536480112992315,-21.130737949999997],"geo_region":"Africa","sub_region":"Eastern Africa"},"Romania":{"place":"Romania","coor":[24.6859225,45.9852129],"geo_region":"Europe","sub_region":"Eastern Europe"},"Russian Federation":{"place":"Russian Federation","coor":[97.7453061,64.6863136],"geo_region":"Europe","sub_region":"Eastern Europe"},"Rwanda":{"place":"Rwanda","coor":[30.0644358,-1.9646631],"geo_region":"Africa","sub_region":"Eastern Africa"},"Saint Helena":{"place":"Saint Helena","coor":[-5.702147693859718,-15.9656162],"geo_region":"Africa","sub_region":"Western Africa"},"Saint Kitts and Nevis":{"place":"Saint Kitts and Nevis","coor":[-62.6725973,17.250512],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Saint Lucia":{"place":"Saint Lucia","coor":[-60.975036,13.8250489],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Saint Pierre and Miquelon":{"place":"Saint Pierre and Miquelon","coor":[-56.195158907484085,46.783246899999995],"geo_region":"North America","sub_region":"NORTHERN AMERICA"},"Saint Vincent and the Grenadines":{"place":"Saint Vincent and the Grenadines","coor":[-61.2765569,12.90447],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Samoa":{"place":"Samoa","coor":[-172.1200508,-13.7693895],"geo_region":"Ocenia","sub_region":"Polynesia"},"San Marino":{"place":"San Marino","coor":[12.458306,43.9458623],"geo_region":"Europe","sub_region":"Southern Europe"},"Sao Tome and Principe":{"place":"Sao Tome and Principe","coor":[6.9648718,0.8875498],"geo_region":"Africa","sub_region":"Middle Africa"},"Saudi Arabia":{"place":"Saudi Arabia","coor":[42.3528328,25.6242618],"geo_region":"Asia","sub_region":"Western Asia"},"Senegal":{"place":"Senegal","coor":[-14.4529612,14.4750607],"geo_region":"Africa","sub_region":"Western Africa"},"Serbia":{"place":"Serbia","coor":[21.07657433209902,44.024322850000004],"geo_region":"Europe","sub_region":"Southern Europe"},"Seychelles":{"place":"Seychelles","coor":[55.4540146,-4.6574977],"geo_region":"Africa","sub_region":"Eastern Africa"},"Sierra Leone":{"place":"Sierra Leone","coor":[-11.8400269,8.6400349],"geo_region":"Africa","sub_region":"Western Africa"},"Singapore":{"place":"Singapore","coor":[103.83039182212079,1.3408630000000001],"geo_region":"Asia","sub_region":"South-Eastern Asia"},"Sint Maarten (Dutch part)":{"place":"Sint Maarten (Dutch part)","coor":[18.0291322,-63.0941194],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Slovakia":{"place":"Slovakia","coor":[19.4528646,48.7411522],"geo_region":"Europe","sub_region":"Eastern Europe"},"Slovenia":{"place":"Slovenia","coor":[14.4808369,45.8133113],"geo_region":"Europe","sub_region":"Southern Europe"},"Solomon Islands":{"place":"Solomon Islands","coor":[162.8288542,-9.7354344],"geo_region":"Ocenia","sub_region":"Melanesia"},"Somalia":{"place":"Somalia","coor":[49.083416,8.3676771],"geo_region":"Africa","sub_region":"Eastern Africa"},"South Africa":{"place":"South Africa","coor":[24.991639,-28.8166236],"geo_region":"Africa","sub_region":"Southern Africa"},"South Sudan":{"place":"South Sudan","coor":[29.6667897,7.8699431],"geo_region":"Africa","sub_region":"Eastern Africa"},"Spain":{"place":"Spain","coor":[-4.8380649,39.3262345],"geo_region":"Europe","sub_region":"Southern Europe"},"Sri Lanka":{"place":"Sri Lanka","coor":[80.7137847,7.5554942],"geo_region":"Asia","sub_region":"Southern Asia"},"State of Palestine":{"place":"State of Palestine","coor":[35.27386547291496,31.94696655],"geo_region":"Asia","sub_region":"Western Asia"},"Sudan":{"place":"Sudan","coor":[29.4917691,14.5844444],"geo_region":"Africa","sub_region":"Northern Africa"},"Suriname":{"place":"Suriname","coor":[-56.0771187,4.1413025],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"Sweden":{"place":"Sweden","coor":[14.5208584,59.6749712],"geo_region":"Europe","sub_region":"Northern Europe"},"Switzerland":{"place":"Switzerland","coor":[8.2319736,46.7985624],"geo_region":"Europe","sub_region":"Western Europe"},"Syrian Arab Republic":{"place":"Syrian Arab Republic","coor":[39.0494106,34.6401861],"geo_region":"Asia","sub_region":"Western Asia"},"Tajikistan":{"place":"Tajikistan","coor":[70.8156541,38.6281733],"geo_region":"Asia","sub_region":"Central Asia"},"Thailand":{"place":"Thailand","coor":[100.83273,14.8971921],"geo_region":"Asia","sub_region":"South-Eastern Asia"},"Timor-Leste":{"place":"Timor-Leste","coor":[125.8375756,-8.5151979],"geo_region":"Asia","sub_region":"South-Eastern Asia"},"Togo":{"place":"Togo","coor":[1.0199765,8.7800265],"geo_region":"Africa","sub_region":"Western Africa"},"Tokelau":{"place":"Tokelau","coor":[-171.8196878,-9.1676396],"geo_region":"Ocenia","sub_region":"Polynesia"},"Tonga":{"place":"Tonga","coor":[-175.2026424,-19.9160819],"geo_region":"Ocenia","sub_region":"Polynesia"},"Trinidad and Tobago":{"place":"Trinidad and Tobago","coor":[-60.9821067,10.8677845],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Tunisia":{"place":"Tunisia","coor":[9.400138,33.8439408],"geo_region":"Africa","sub_region":"Northern Africa"},"Turkey":{"place":"Turkey","coor":[34.9249653,38.9597594],"geo_region":"Asia","sub_region":"Western Asia"},"Turkmenistan":{"place":"Turkmenistan","coor":[59.3924609,39.3763807],"geo_region":"Asia","sub_region":"Central Asia"},"Turks and Caicos Islands":{"place":"Turks and Caicos Islands","coor":[-71.6201783,21.7214683],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Tuvalu":{"place":"Tuvalu","coor":[178.1167698,-7.768959],"geo_region":"Ocenia","sub_region":"Polynesia"},"Uganda":{"place":"Uganda","coor":[32.2166578,1.5333554],"geo_region":"Africa","sub_region":"Eastern Africa"},"Ukraine":{"place":"Ukraine","coor":[31.2718321,49.4871968],"geo_region":"Europe","sub_region":"Eastern Europe"},"United Arab Emirates":{"place":"United Arab Emirates","coor":[53.9994829,24.0002488],"geo_region":"Asia","sub_region":"Western Asia"},"United Kingdom":{"place":"United Kingdom","coor":[-3.2765753,54.7023545],"geo_region":"Europe","sub_region":"Northern Europe"},"United Republic of Tanzania":{"place":"United Republic of Tanzania","coor":[35.7878438,-6.5247123],"geo_region":"Africa","sub_region":"Eastern Africa"},"United States of America":{"place":"United States of America","coor":[-100.4458825,39.7837304],"geo_region":"North America","sub_region":"NORTHERN AMERICA"},"United States Virgin Islands":{"place":"United States Virgin Islands","coor":[-64.7080574,17.789187],"geo_region":"Latin America and the Caribbean","sub_region":"Caribbean"},"Uruguay":{"place":"Uruguay","coor":[-56.0201525,-32.8755548],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"Uzbekistan":{"place":"Uzbekistan","coor":[63.9528098,41.32373],"geo_region":"Asia","sub_region":"Central Asia"},"Vanuatu":{"place":"Vanuatu","coor":[168.1069154,-16.5255069],"geo_region":"Ocenia","sub_region":"Melanesia"},"Venezuela (Bolivarian Republic of)":{"place":"Venezuela (Bolivarian Republic of)","coor":[-66.1109318,8.0018709],"geo_region":"Latin America and the Caribbean","sub_region":"South America"},"Viet Nam":{"place":"Viet Nam","coor":[108.4265113,13.2904027],"geo_region":"Asia","sub_region":"South-Eastern Asia"},"Wallis and Futuna Islands":{"place":"Wallis and Futuna Islands","coor":[-178.08997342208266,-14.30190495],"geo_region":"Ocenia","sub_region":"Polynesia"},"Western Sahara":{"place":"Western Sahara","coor":[-13.7667848,24.1797324],"geo_region":"Africa","sub_region":"Northern Africa"},"Yemen":{"place":"Yemen","coor":[47.8915271,16.3471243],"geo_region":"Asia","sub_region":"Western Asia"},"Zambia":{"place":"Zambia","coor":[27.5599164,-14.5186239],"geo_region":"Africa","sub_region":"Eastern Africa"},"Zimbabwe":{"place":"Zimbabwe","coor":[29.7468414,-18.4554963],"geo_region":"Africa","sub_region":"Eastern Africa"}}
+{
+    "Afghanistan": {
+      "place": "Afghanistan",
+      "coor": [
+        66.2385139,
+        33.7680065
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Southern Asia"
+    },
+    "Albania": {
+      "place": "Albania",
+      "coor": [
+        19.9999619,
+        41.000028
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Algeria": {
+      "place": "Algeria",
+      "coor": [
+        2.9999825,
+        28.0000272
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Northern Africa"
+    },
+    "American Samoa": {
+      "place": "American Samoa",
+      "coor": [
+        -170.692511,
+        -14.289304
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Polynesia"
+    },
+    "Andorra": {
+      "place": "Andorra",
+      "coor": [
+        1.5732033,
+        42.5407167
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Angola": {
+      "place": "Angola",
+      "coor": [
+        17.5691241,
+        -11.8775768
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Middle Africa"
+    },
+    "Anguilla": {
+      "place": "Anguilla",
+      "coor": [
+        -63.0750234,
+        18.1954947
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Antigua and Barbuda": {
+      "place": "Antigua and Barbuda",
+      "coor": [
+        -61.9554608,
+        17.2234721
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Argentina": {
+      "place": "Argentina",
+      "coor": [
+        -64.9672817,
+        -34.9964963
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "Armenia": {
+      "place": "Armenia",
+      "coor": [
+        44.6736646,
+        40.7696272
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Aruba": {
+      "place": "Aruba",
+      "coor": [
+        -69.9609842,
+        12.4902998
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Australia": {
+      "place": "Australia",
+      "coor": [
+        134.755,
+        -24.7761086
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Australia / New Zealand"
+    },
+    "Austria": {
+      "place": "Austria",
+      "coor": [
+        13.199959,
+        47.2000338
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Western Europe"
+    },
+    "Azerbaijan": {
+      "place": "Azerbaijan",
+      "coor": [
+        47.7872508,
+        40.3936294
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Bahamas": {
+      "place": "Bahamas",
+      "coor": [
+        -78.0000547,
+        24.7736546
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Bahrain": {
+      "place": "Bahrain",
+      "coor": [
+        50.5344606,
+        26.1551249
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Bangladesh": {
+      "place": "Bangladesh",
+      "coor": [
+        90.2932426,
+        24.4768783
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Southern Asia"
+    },
+    "Barbados": {
+      "place": "Barbados",
+      "coor": [
+        -59.5250305,
+        13.1500331
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Belarus": {
+      "place": "Belarus",
+      "coor": [
+        27.6971358,
+        53.4250605
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Eastern Europe"
+    },
+    "Belgium": {
+      "place": "Belgium",
+      "coor": [
+        4.6667145,
+        50.6402809
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Western Europe"
+    },
+    "Belize": {
+      "place": "Belize",
+      "coor": [
+        -88.7600927,
+        16.8259793
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Central America"
+    },
+    "Benin": {
+      "place": "Benin",
+      "coor": [
+        2.2584408,
+        9.5293472
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Bermuda": {
+      "place": "Bermuda",
+      "coor": [
+        -64.7603583,
+        32.3018217
+      ],
+      "geo_region": "North America",
+      "sub_region": "NORTHERN AMERICA"
+    },
+    "Bhutan": {
+      "place": "Bhutan",
+      "coor": [
+        90.5119273,
+        27.549511
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Southern Asia"
+    },
+    "Bolivia (Plurinational State of)": {
+      "place": "Bolivia (Plurinational State of)",
+      "coor": [
+        -64.9912286,
+        -17.0568696
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "Bonaire, Sint Eustatius and Saba": {
+      "place": "Bonaire, Sint Eustatius and Saba",
+      "coor": [
+        -68.29096143734236,
+        12.167
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Bosnia and Herzegovina": {
+      "place": "Bosnia and Herzegovina",
+      "coor": [
+        17.5961467,
+        44.3053476
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Botswana": {
+      "place": "Botswana",
+      "coor": [
+        24.5928742,
+        -23.1681782
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Southern Africa"
+    },
+    "Brazil": {
+      "place": "Brazil",
+      "coor": [
+        -53.2,
+        -10.3333333
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "British Virgin Islands": {
+      "place": "British Virgin Islands",
+      "coor": [
+        -64.5661642,
+        18.4024395
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Brunei Darussalam": {
+      "place": "Brunei Darussalam",
+      "coor": [
+        114.5653908,
+        4.4137155
+      ],
+      "geo_region": "Asia",
+      "sub_region": "South-Eastern Asia"
+    },
+    "Bulgaria": {
+      "place": "Bulgaria",
+      "coor": [
+        25.4856617,
+        42.6073975
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Eastern Europe"
+    },
+    "Burkina Faso": {
+      "place": "Burkina Faso",
+      "coor": [
+        -1.6880314,
+        12.0753083
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Burundi": {
+      "place": "Burundi",
+      "coor": [
+        29.8870575,
+        -3.3634357
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Cabo Verde": {
+      "place": "Cabo Verde",
+      "coor": [
+        -24.0083947,
+        16.0000552
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Cambodia": {
+      "place": "Cambodia",
+      "coor": [
+        104.869423,
+        13.5066394
+      ],
+      "geo_region": "Asia",
+      "sub_region": "South-Eastern Asia"
+    },
+    "Cameroon": {
+      "place": "Cameroon",
+      "coor": [
+        13.1535811,
+        4.6125522
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Middle Africa"
+    },
+    "Canada": {
+      "place": "Canada",
+      "coor": [
+        -107.9917071,
+        61.0666922
+      ],
+      "geo_region": "North America",
+      "sub_region": "NORTHERN AMERICA"
+    },
+    "Cayman Islands": {
+      "place": "Cayman Islands",
+      "coor": [
+        -80.5667132,
+        19.5417212
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Central African Republic": {
+      "place": "Central African Republic",
+      "coor": [
+        19.9981227,
+        7.0323598
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Middle Africa"
+    },
+    "Chad": {
+      "place": "Chad",
+      "coor": [
+        19.0156172,
+        15.6134137
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Middle Africa"
+    },
+    "Channel Islands": {
+      "place": "Channel Islands",
+      "coor": [
+        -145.7996671,
+        60.6167942
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "Chile": {
+      "place": "Chile",
+      "coor": [
+        -71.3187697,
+        -31.7613365
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "China": {
+      "place": "China",
+      "coor": [
+        104.999927,
+        35.000074
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Eastern Asia"
+    },
+    "China, Hong Kong SAR": {
+      "place": "China, Hong Kong SAR",
+      "coor": [
+        113.9876163,
+        22.3526632
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Eastern Asia"
+    },
+    "China, Macao SAR": {
+      "place": "China, Macao SAR",
+      "coor": [
+        113.5351333,
+        22.1618283
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Eastern Asia"
+    },
+    "Colombia": {
+      "place": "Colombia",
+      "coor": [
+        -73.783892,
+        2.8894434
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "Comoros": {
+      "place": "Comoros",
+      "coor": [
+        44.2832964,
+        -12.2045176
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Congo": {
+      "place": "Congo",
+      "coor": [
+        15.6419155,
+        -0.7264327
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Middle Africa"
+    },
+    "Cook Islands": {
+      "place": "Cook Islands",
+      "coor": [
+        -160.3554851,
+        -16.0492781
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Polynesia"
+    },
+    "Costa Rica": {
+      "place": "Costa Rica",
+      "coor": [
+        -84.0739102,
+        10.2735633
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Central America"
+    },
+    "Côte d'Ivoire": {
+      "place": "Côte d'Ivoire",
+      "coor": [
+        -5.5679458,
+        7.9897371
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Croatia": {
+      "place": "Croatia",
+      "coor": [
+        17.0118954,
+        45.5643442
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Cuba": {
+      "place": "Cuba",
+      "coor": [
+        -80.8328748,
+        23.0131338
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Curaçao": {
+      "place": "Curaçao",
+      "coor": [
+        -68.9640875031406,
+        12.1845
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Cyprus": {
+      "place": "Cyprus",
+      "coor": [
+        33.1451285,
+        34.9823018
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Czechia": {
+      "place": "Czechia",
+      "coor": [
+        15.4749544,
+        49.8167003
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Eastern Europe"
+    },
+    "Dem. People's Republic of Korea": {
+      "place": "Dem. People's Republic of Korea",
+      "coor": [
+        125.1813511,
+        40.2787386
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Eastern Asia"
+    },
+    "Democratic Republic of the Congo": {
+      "place": "Democratic Republic of the Congo",
+      "coor": [
+        23.8222636,
+        -2.9814344
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Middle Africa"
+    },
+    "Denmark": {
+      "place": "Denmark",
+      "coor": [
+        10.3333283,
+        55.670249
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "Djibouti": {
+      "place": "Djibouti",
+      "coor": [
+        42.8453061,
+        11.8145966
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Dominica": {
+      "place": "Dominica",
+      "coor": [
+        -70.3028026,
+        19.0974031
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Dominican Republic": {
+      "place": "Dominican Republic",
+      "coor": [
+        -70.3028026,
+        19.0974031
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Ecuador": {
+      "place": "Ecuador",
+      "coor": [
+        -79.3666965,
+        -1.3397668
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "Egypt": {
+      "place": "Egypt",
+      "coor": [
+        29.2675469,
+        26.2540493
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Northern Africa"
+    },
+    "El Salvador": {
+      "place": "El Salvador",
+      "coor": [
+        -88.9140683,
+        13.8000382
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Central America"
+    },
+    "Equatorial Guinea": {
+      "place": "Equatorial Guinea",
+      "coor": [
+        10.5170357,
+        1.613172
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Middle Africa"
+    },
+    "Eritrea": {
+      "place": "Eritrea",
+      "coor": [
+        37.9999668,
+        15.9500319
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Estonia": {
+      "place": "Estonia",
+      "coor": [
+        25.3319078,
+        58.7523778
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "Eswatini": {
+      "place": "Eswatini",
+      "coor": [
+        31.3991317,
+        -26.5624806
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Southern Africa"
+    },
+    "Ethiopia": {
+      "place": "Ethiopia",
+      "coor": [
+        38.6521203,
+        10.2116702
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Falkland Islands (Malvinas)": {
+      "place": "Falkland Islands (Malvinas)",
+      "coor": [
+        -59.5500387,
+        -51.9666424
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "Faroe Islands": {
+      "place": "Faroe Islands",
+      "coor": [
+        -7.0322972,
+        62.0448724
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "Fiji": {
+      "place": "Fiji",
+      "coor": [
+        179.0122737,
+        -18.1239696
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Melanesia"
+    },
+    "Finland": {
+      "place": "Finland",
+      "coor": [
+        25.9209164,
+        63.2467777
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "France": {
+      "place": "France",
+      "coor": [
+        1.8883335,
+        46.603354
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Western Europe"
+    },
+    "French Guiana": {
+      "place": "French Guiana",
+      "coor": [
+        -52.999998,
+        4.0039882
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "French Polynesia": {
+      "place": "French Polynesia",
+      "coor": [
+        -146.0490931059517,
+        -16.03442485
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Polynesia"
+    },
+    "Gabon": {
+      "place": "Gabon",
+      "coor": [
+        11.6899699,
+        -0.8999695
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Middle Africa"
+    },
+    "Gambia": {
+      "place": "Gambia",
+      "coor": [
+        -15.4900464,
+        13.470062
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Georgia": {
+      "place": "Georgia",
+      "coor": [
+        -83.1137366,
+        32.3293809
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Germany": {
+      "place": "Germany",
+      "coor": [
+        10.4234469,
+        51.0834196
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Western Europe"
+    },
+    "Ghana": {
+      "place": "Ghana",
+      "coor": [
+        -1.0800271,
+        8.0300284
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Gibraltar": {
+      "place": "Gibraltar",
+      "coor": [
+        -5.335277183483561,
+        36.10674695
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Greece": {
+      "place": "Greece",
+      "coor": [
+        21.9877132,
+        38.9953683
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Greenland": {
+      "place": "Greenland",
+      "coor": [
+        -42.8125967,
+        77.6192349
+      ],
+      "geo_region": "North America",
+      "sub_region": "NORTHERN AMERICA"
+    },
+    "Grenada": {
+      "place": "Grenada",
+      "coor": [
+        -61.6904045,
+        12.1360374
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Guadeloupe": {
+      "place": "Guadeloupe",
+      "coor": [
+        -61.5650444,
+        16.2490067
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Guam": {
+      "place": "Guam",
+      "coor": [
+        144.75755102972062,
+        13.450125700000001
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Micronesia"
+    },
+    "Guatemala": {
+      "place": "Guatemala",
+      "coor": [
+        -89.8988087,
+        15.6356088
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Central America"
+    },
+    "Guinea": {
+      "place": "Guinea",
+      "coor": [
+        -10.7083587,
+        10.7226226
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Guinea-Bissau": {
+      "place": "Guinea-Bissau",
+      "coor": [
+        -14.9000214,
+        12.100035
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Guyana": {
+      "place": "Guyana",
+      "coor": [
+        -58.6416891,
+        4.8417097
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "Haiti": {
+      "place": "Haiti",
+      "coor": [
+        -72.3570972,
+        19.1399952
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Holy See": {
+      "place": "Holy See",
+      "coor": [
+        -77.06572732690151,
+        38.9247244
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Honduras": {
+      "place": "Honduras",
+      "coor": [
+        -86.0755145,
+        15.2572432
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Central America"
+    },
+    "Hungary": {
+      "place": "Hungary",
+      "coor": [
+        19.5060937,
+        47.1817585
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Eastern Europe"
+    },
+    "Iceland": {
+      "place": "Iceland",
+      "coor": [
+        -18.1059013,
+        64.9841821
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "India": {
+      "place": "India",
+      "coor": [
+        78.6677428,
+        22.3511148
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Southern Asia"
+    },
+    "Indonesia": {
+      "place": "Indonesia",
+      "coor": [
+        117.8902853,
+        -2.4833826
+      ],
+      "geo_region": "Asia",
+      "sub_region": "South-Eastern Asia"
+    },
+    "Iran (Islamic Republic of)": {
+      "place": "Iran (Islamic Republic of)",
+      "coor": [
+        54.5643516,
+        32.6475314
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Southern Asia"
+    },
+    "Iraq": {
+      "place": "Iraq",
+      "coor": [
+        44.1749775,
+        33.0955793
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Ireland": {
+      "place": "Ireland",
+      "coor": [
+        -7.9794599,
+        52.865196
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "Isle of Man": {
+      "place": "Isle of Man",
+      "coor": [
+        -4.514598745698255,
+        54.2358167
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "Israel": {
+      "place": "Israel",
+      "coor": [
+        34.8667654,
+        31.5313113
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Italy": {
+      "place": "Italy",
+      "coor": [
+        12.674297,
+        42.6384261
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Jamaica": {
+      "place": "Jamaica",
+      "coor": [
+        -77.1598454610168,
+        18.1152958
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Japan": {
+      "place": "Japan",
+      "coor": [
+        139.2394179,
+        36.5748441
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Eastern Asia"
+    },
+    "Jordan": {
+      "place": "Jordan",
+      "coor": [
+        36.941628,
+        31.1667049
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Kazakhstan": {
+      "place": "Kazakhstan",
+      "coor": [
+        65.2093197,
+        47.2286086
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Central Asia"
+    },
+    "Kenya": {
+      "place": "Kenya",
+      "coor": [
+        38.4313975,
+        1.4419683
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Kiribati": {
+      "place": "Kiribati",
+      "coor": [
+        173.664834025,
+        0.306
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Micronesia"
+    },
+    "Kuwait": {
+      "place": "Kuwait",
+      "coor": [
+        47.4979476,
+        29.2733964
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Kyrgyzstan": {
+      "place": "Kyrgyzstan",
+      "coor": [
+        74.724091,
+        41.5089324
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Central Asia"
+    },
+    "Lao People's Democratic Republic": {
+      "place": "Lao People's Democratic Republic",
+      "coor": [
+        103.378253,
+        20.0171109
+      ],
+      "geo_region": "Asia",
+      "sub_region": "South-Eastern Asia"
+    },
+    "Latvia": {
+      "place": "Latvia",
+      "coor": [
+        24.7537645,
+        56.8406494
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "Lebanon": {
+      "place": "Lebanon",
+      "coor": [
+        35.843409,
+        33.8750629
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Lesotho": {
+      "place": "Lesotho",
+      "coor": [
+        28.3350193,
+        -29.6039267
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Southern Africa"
+    },
+    "Liberia": {
+      "place": "Liberia",
+      "coor": [
+        -9.3658524,
+        5.7499721
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Libya": {
+      "place": "Libya",
+      "coor": [
+        18.1236723,
+        26.8234472
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Northern Africa"
+    },
+    "Liechtenstein": {
+      "place": "Liechtenstein",
+      "coor": [
+        9.5531527,
+        47.1416307
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Western Europe"
+    },
+    "Lithuania": {
+      "place": "Lithuania",
+      "coor": [
+        23.7499997,
+        55.3500003
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "Luxembourg": {
+      "place": "Luxembourg",
+      "coor": [
+        6.1296751,
+        49.8158683
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Western Europe"
+    },
+    "Madagascar": {
+      "place": "Madagascar",
+      "coor": [
+        46.4416422,
+        -18.9249604
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Malawi": {
+      "place": "Malawi",
+      "coor": [
+        33.9301963,
+        -13.2687204
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Malaysia": {
+      "place": "Malaysia",
+      "coor": [
+        102.2656823,
+        4.5693754
+      ],
+      "geo_region": "Asia",
+      "sub_region": "South-Eastern Asia"
+    },
+    "Maldives": {
+      "place": "Maldives",
+      "coor": [
+        73.3287853,
+        4.7064352
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Southern Asia"
+    },
+    "Mali": {
+      "place": "Mali",
+      "coor": [
+        -2.2900239,
+        16.3700359
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Malta": {
+      "place": "Malta",
+      "coor": [
+        14.4476911,
+        35.8885993
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Marshall Islands": {
+      "place": "Marshall Islands",
+      "coor": [
+        168,
+        9
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Micronesia"
+    },
+    "Martinique": {
+      "place": "Martinique",
+      "coor": [
+        -61.01582685063731,
+        14.6367927
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Mauritania": {
+      "place": "Mauritania",
+      "coor": [
+        -9.2399263,
+        20.2540382
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Mauritius": {
+      "place": "Mauritius",
+      "coor": [
+        57.5703566,
+        -20.2759451
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Mayotte": {
+      "place": "Mayotte",
+      "coor": [
+        45.1520755,
+        -12.823048
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Mexico": {
+      "place": "Mexico",
+      "coor": [
+        -99.1331785,
+        19.4326296
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Central America"
+    },
+    "Micronesia (Fed. States of)": {
+      "place": "Micronesia (Fed. States of)",
+      "coor": [
+        145.7244967,
+        5.1994887
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Micronesia"
+    },
+    "Monaco": {
+      "place": "Monaco",
+      "coor": [
+        7.424224092532953,
+        43.73844905
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Western Europe"
+    },
+    "Mongolia": {
+      "place": "Mongolia",
+      "coor": [
+        103.8499736,
+        46.8250388
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Eastern Asia"
+    },
+    "Montenegro": {
+      "place": "Montenegro",
+      "coor": [
+        19.5180992,
+        42.9868853
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Montserrat": {
+      "place": "Montserrat",
+      "coor": [
+        -62.1916844,
+        16.7417041
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Morocco": {
+      "place": "Morocco",
+      "coor": [
+        -7.3362482,
+        31.1728205
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Northern Africa"
+    },
+    "Mozambique": {
+      "place": "Mozambique",
+      "coor": [
+        34.9144977,
+        -19.302233
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Myanmar": {
+      "place": "Myanmar",
+      "coor": [
+        95.9999652,
+        17.1750495
+      ],
+      "geo_region": "Asia",
+      "sub_region": "South-Eastern Asia"
+    },
+    "Namibia": {
+      "place": "Namibia",
+      "coor": [
+        17.3231107,
+        -23.2335499
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Southern Africa"
+    },
+    "Nauru": {
+      "place": "Nauru",
+      "coor": [
+        166.9324426,
+        -0.5252306
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Micronesia"
+    },
+    "Nepal": {
+      "place": "Nepal",
+      "coor": [
+        84.0917139,
+        28.1083929
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Southern Asia"
+    },
+    "Netherlands": {
+      "place": "Netherlands",
+      "coor": [
+        5.7480821,
+        52.5001698
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Western Europe"
+    },
+    "New Caledonia": {
+      "place": "New Caledonia",
+      "coor": [
+        164.55660583077983,
+        -20.454288599999998
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Melanesia"
+    },
+    "New Zealand": {
+      "place": "New Zealand",
+      "coor": [
+        172.8344077,
+        -41.5000831
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Australia / New Zealand"
+    },
+    "Nicaragua": {
+      "place": "Nicaragua",
+      "coor": [
+        -85.2936911,
+        12.6090157
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Central America"
+    },
+    "Niger": {
+      "place": "Niger",
+      "coor": [
+        9.3238432,
+        17.7356214
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Nigeria": {
+      "place": "Nigeria",
+      "coor": [
+        7.9999721,
+        9.6000359
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Niue": {
+      "place": "Niue",
+      "coor": [
+        -169.8613411,
+        -19.0536414
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Polynesia"
+    },
+    "North Macedonia": {
+      "place": "North Macedonia",
+      "coor": [
+        21.7168387,
+        41.6171214
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Northern Mariana Islands": {
+      "place": "Northern Mariana Islands",
+      "coor": [
+        145.21345248318923,
+        14.149020499999999
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Micronesia"
+    },
+    "Norway": {
+      "place": "Norway",
+      "coor": [
+        11.52803643954819,
+        64.5731537
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "Oman": {
+      "place": "Oman",
+      "coor": [
+        57.0036901,
+        21.0000287
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Pakistan": {
+      "place": "Pakistan",
+      "coor": [
+        71.247499,
+        30.3308401
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Southern Asia"
+    },
+    "Palau": {
+      "place": "Palau",
+      "coor": [
+        133.313631,
+        6.097367
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Micronesia"
+    },
+    "Panama": {
+      "place": "Panama",
+      "coor": [
+        -81.1308434,
+        8.559559
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Central America"
+    },
+    "Papua New Guinea": {
+      "place": "Papua New Guinea",
+      "coor": [
+        144.2489081,
+        -5.6816069
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Melanesia"
+    },
+    "Paraguay": {
+      "place": "Paraguay",
+      "coor": [
+        -58.1693445,
+        -23.3165935
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "Peru": {
+      "place": "Peru",
+      "coor": [
+        -75.0458515,
+        -6.8699697
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "Philippines": {
+      "place": "Philippines",
+      "coor": [
+        122.7312101,
+        12.7503486
+      ],
+      "geo_region": "Asia",
+      "sub_region": "South-Eastern Asia"
+    },
+    "Poland": {
+      "place": "Poland",
+      "coor": [
+        19.134422,
+        52.215933
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Eastern Europe"
+    },
+    "Portugal": {
+      "place": "Portugal",
+      "coor": [
+        -7.8896263,
+        40.0332629
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Puerto Rico": {
+      "place": "Puerto Rico",
+      "coor": [
+        -66.41328179513847,
+        18.2214149
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Qatar": {
+      "place": "Qatar",
+      "coor": [
+        51.2295295,
+        25.3336984
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Republic of Korea": {
+      "place": "Republic of Korea",
+      "coor": [
+        127.6961188,
+        36.638392
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Eastern Asia"
+    },
+    "Republic of Moldova": {
+      "place": "Republic of Moldova",
+      "coor": [
+        28.5670941,
+        47.2879608
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Eastern Europe"
+    },
+    "Réunion": {
+      "place": "Réunion",
+      "coor": [
+        55.536480112992315,
+        -21.130737949999997
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Romania": {
+      "place": "Romania",
+      "coor": [
+        24.6859225,
+        45.9852129
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Eastern Europe"
+    },
+    "Russian Federation": {
+      "place": "Russian Federation",
+      "coor": [
+        97.7453061,
+        64.6863136
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Eastern Europe"
+    },
+    "Rwanda": {
+      "place": "Rwanda",
+      "coor": [
+        30.0644358,
+        -1.9646631
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Saint Helena": {
+      "place": "Saint Helena",
+      "coor": [
+        -5.702147693859718,
+        -15.9656162
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Saint Kitts and Nevis": {
+      "place": "Saint Kitts and Nevis",
+      "coor": [
+        -62.6725973,
+        17.250512
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Saint Lucia": {
+      "place": "Saint Lucia",
+      "coor": [
+        -60.975036,
+        13.8250489
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Saint Pierre and Miquelon": {
+      "place": "Saint Pierre and Miquelon",
+      "coor": [
+        -56.195158907484085,
+        46.783246899999995
+      ],
+      "geo_region": "North America",
+      "sub_region": "NORTHERN AMERICA"
+    },
+    "Saint Vincent and the Grenadines": {
+      "place": "Saint Vincent and the Grenadines",
+      "coor": [
+        -61.2765569,
+        12.90447
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Samoa": {
+      "place": "Samoa",
+      "coor": [
+        -172.1200508,
+        -13.7693895
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Polynesia"
+    },
+    "San Marino": {
+      "place": "San Marino",
+      "coor": [
+        12.458306,
+        43.9458623
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Sao Tome and Principe": {
+      "place": "Sao Tome and Principe",
+      "coor": [
+        6.9648718,
+        0.8875498
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Middle Africa"
+    },
+    "Saudi Arabia": {
+      "place": "Saudi Arabia",
+      "coor": [
+        42.3528328,
+        25.6242618
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Senegal": {
+      "place": "Senegal",
+      "coor": [
+        -14.4529612,
+        14.4750607
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Serbia": {
+      "place": "Serbia",
+      "coor": [
+        21.07657433209902,
+        44.024322850000004
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Seychelles": {
+      "place": "Seychelles",
+      "coor": [
+        55.4540146,
+        -4.6574977
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Sierra Leone": {
+      "place": "Sierra Leone",
+      "coor": [
+        -11.8400269,
+        8.6400349
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Singapore": {
+      "place": "Singapore",
+      "coor": [
+        103.83039182212079,
+        1.3408630000000001
+      ],
+      "geo_region": "Asia",
+      "sub_region": "South-Eastern Asia"
+    },
+    "Sint Maarten (Dutch part)": {
+      "place": "Sint Maarten (Dutch part)",
+      "coor": [
+        -63.0941194,
+        18.0291322
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Slovakia": {
+      "place": "Slovakia",
+      "coor": [
+        19.4528646,
+        48.7411522
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Eastern Europe"
+    },
+    "Slovenia": {
+      "place": "Slovenia",
+      "coor": [
+        14.4808369,
+        45.8133113
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Solomon Islands": {
+      "place": "Solomon Islands",
+      "coor": [
+        162.8288542,
+        -9.7354344
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Melanesia"
+    },
+    "Somalia": {
+      "place": "Somalia",
+      "coor": [
+        49.083416,
+        8.3676771
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "South Africa": {
+      "place": "South Africa",
+      "coor": [
+        24.991639,
+        -28.8166236
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Southern Africa"
+    },
+    "South Sudan": {
+      "place": "South Sudan",
+      "coor": [
+        29.6667897,
+        7.8699431
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Spain": {
+      "place": "Spain",
+      "coor": [
+        -4.8380649,
+        39.3262345
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Southern Europe"
+    },
+    "Sri Lanka": {
+      "place": "Sri Lanka",
+      "coor": [
+        80.7137847,
+        7.5554942
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Southern Asia"
+    },
+    "State of Palestine": {
+      "place": "State of Palestine",
+      "coor": [
+        35.27386547291496,
+        31.94696655
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Sudan": {
+      "place": "Sudan",
+      "coor": [
+        29.4917691,
+        14.5844444
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Northern Africa"
+    },
+    "Suriname": {
+      "place": "Suriname",
+      "coor": [
+        -56.0771187,
+        4.1413025
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "Sweden": {
+      "place": "Sweden",
+      "coor": [
+        14.5208584,
+        59.6749712
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "Switzerland": {
+      "place": "Switzerland",
+      "coor": [
+        8.2319736,
+        46.7985624
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Western Europe"
+    },
+    "Syrian Arab Republic": {
+      "place": "Syrian Arab Republic",
+      "coor": [
+        39.0494106,
+        34.6401861
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Tajikistan": {
+      "place": "Tajikistan",
+      "coor": [
+        70.8156541,
+        38.6281733
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Central Asia"
+    },
+    "Thailand": {
+      "place": "Thailand",
+      "coor": [
+        100.83273,
+        14.8971921
+      ],
+      "geo_region": "Asia",
+      "sub_region": "South-Eastern Asia"
+    },
+    "Timor-Leste": {
+      "place": "Timor-Leste",
+      "coor": [
+        125.8375756,
+        -8.5151979
+      ],
+      "geo_region": "Asia",
+      "sub_region": "South-Eastern Asia"
+    },
+    "Togo": {
+      "place": "Togo",
+      "coor": [
+        1.0199765,
+        8.7800265
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Western Africa"
+    },
+    "Tokelau": {
+      "place": "Tokelau",
+      "coor": [
+        -171.8196878,
+        -9.1676396
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Polynesia"
+    },
+    "Tonga": {
+      "place": "Tonga",
+      "coor": [
+        -175.2026424,
+        -19.9160819
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Polynesia"
+    },
+    "Trinidad and Tobago": {
+      "place": "Trinidad and Tobago",
+      "coor": [
+        -60.9821067,
+        10.8677845
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Tunisia": {
+      "place": "Tunisia",
+      "coor": [
+        9.400138,
+        33.8439408
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Northern Africa"
+    },
+    "Turkey": {
+      "place": "Turkey",
+      "coor": [
+        34.9249653,
+        38.9597594
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Turkmenistan": {
+      "place": "Turkmenistan",
+      "coor": [
+        59.3924609,
+        39.3763807
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Central Asia"
+    },
+    "Turks and Caicos Islands": {
+      "place": "Turks and Caicos Islands",
+      "coor": [
+        -71.6201783,
+        21.7214683
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Tuvalu": {
+      "place": "Tuvalu",
+      "coor": [
+        178.1167698,
+        -7.768959
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Polynesia"
+    },
+    "Uganda": {
+      "place": "Uganda",
+      "coor": [
+        32.2166578,
+        1.5333554
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Ukraine": {
+      "place": "Ukraine",
+      "coor": [
+        31.2718321,
+        49.4871968
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Eastern Europe"
+    },
+    "United Arab Emirates": {
+      "place": "United Arab Emirates",
+      "coor": [
+        53.9994829,
+        24.0002488
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "United Kingdom": {
+      "place": "United Kingdom",
+      "coor": [
+        -3.2765753,
+        54.7023545
+      ],
+      "geo_region": "Europe",
+      "sub_region": "Northern Europe"
+    },
+    "United Republic of Tanzania": {
+      "place": "United Republic of Tanzania",
+      "coor": [
+        35.7878438,
+        -6.5247123
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "United States of America": {
+      "place": "United States of America",
+      "coor": [
+        -100.4458825,
+        39.7837304
+      ],
+      "geo_region": "North America",
+      "sub_region": "NORTHERN AMERICA"
+    },
+    "United States Virgin Islands": {
+      "place": "United States Virgin Islands",
+      "coor": [
+        -64.7080574,
+        17.789187
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "Caribbean"
+    },
+    "Uruguay": {
+      "place": "Uruguay",
+      "coor": [
+        -56.0201525,
+        -32.8755548
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "Uzbekistan": {
+      "place": "Uzbekistan",
+      "coor": [
+        63.9528098,
+        41.32373
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Central Asia"
+    },
+    "Vanuatu": {
+      "place": "Vanuatu",
+      "coor": [
+        168.1069154,
+        -16.5255069
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Melanesia"
+    },
+    "Venezuela (Bolivarian Republic of)": {
+      "place": "Venezuela (Bolivarian Republic of)",
+      "coor": [
+        -66.1109318,
+        8.0018709
+      ],
+      "geo_region": "Latin America and the Caribbean",
+      "sub_region": "South America"
+    },
+    "Viet Nam": {
+      "place": "Viet Nam",
+      "coor": [
+        108.4265113,
+        13.2904027
+      ],
+      "geo_region": "Asia",
+      "sub_region": "South-Eastern Asia"
+    },
+    "Wallis and Futuna Islands": {
+      "place": "Wallis and Futuna Islands",
+      "coor": [
+        -178.08997342208266,
+        -14.30190495
+      ],
+      "geo_region": "Ocenia",
+      "sub_region": "Polynesia"
+    },
+    "Western Sahara": {
+      "place": "Western Sahara",
+      "coor": [
+        -13.7667848,
+        24.1797324
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Northern Africa"
+    },
+    "Yemen": {
+      "place": "Yemen",
+      "coor": [
+        47.8915271,
+        16.3471243
+      ],
+      "geo_region": "Asia",
+      "sub_region": "Western Asia"
+    },
+    "Zambia": {
+      "place": "Zambia",
+      "coor": [
+        27.5599164,
+        -14.5186239
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    },
+    "Zimbabwe": {
+      "place": "Zimbabwe",
+      "coor": [
+        29.7468414,
+        -18.4554963
+      ],
+      "geo_region": "Africa",
+      "sub_region": "Eastern Africa"
+    }
+  }
