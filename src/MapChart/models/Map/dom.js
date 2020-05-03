@@ -3,6 +3,7 @@ export default Dom;
 
 Dom.setupCont = function (cont) {
   cont.style.position = "relative"
+  cont.style.top = "60px"
 }
 
 Dom.setupCanvas = function (cont, dim) {
@@ -63,7 +64,8 @@ Dom.setupLegend = function (data, year, svg, dim, colors, mouseOverLinkF) {
 
   data_arr.sort((a,b) => b.value - a.value)
   g.innerHTML = "";
-  data_arr.forEach(d => {
+  //circle lengend
+  /*data_arr.forEach(d => {
     const r = scale(d.value)
     const circle = g.appendChild(document.createElementNS("http://www.w3.org/2000/svg","circle"))
     circle.setAttribute("cx", x)
@@ -89,7 +91,7 @@ Dom.setupLegend = function (data, year, svg, dim, colors, mouseOverLinkF) {
     text.setAttribute("fill", "black")
     text.setAttribute("font-size", "9")
     text.innerHTML = d.value.toLocaleString()
-  })
+  })*/
 
   data_arr.forEach((d, i) => {
     const y = dim.height - 12 - 12*i,

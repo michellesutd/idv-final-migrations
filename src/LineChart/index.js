@@ -23,9 +23,9 @@ LineChart.prototype.draw = function() {
   const focused_category = self.store.focused_migration_category,
     [xValue, yValue] = [d => d.date, d => d.value],
     style = {
-      afr_to_eu: {color: "red"},
-      afr_to_afr: {color: focused_category === "other_to_eu" ? "none" : "darkgreen"},
-      other_to_eu: {color: focused_category === "afr_to_afr" ? "none" :"blue"}
+      afr_to_eu: {color: "#CE2150"},
+      afr_to_afr: {color: focused_category === "other_to_eu" ? "none" : "#EE8E13"},
+      other_to_eu: {color: focused_category === "afr_to_afr" ? "none" :"#2E78BA"}
     },
     orientation = self.config.orientation,
     mouseOverLinkF = cat => self.store.event.trigger("updateFocusedMigrationCategory", cat)

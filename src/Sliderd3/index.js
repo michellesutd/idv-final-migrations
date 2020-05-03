@@ -85,7 +85,7 @@ export default function Slider(cont, store) {
         })
         .attr("class", "track-overlay")
         .style("pointer-events", "stroke")
-        .style("stroke-width", "50px")
+        .style("stroke-width", "10px")
         .style("stroke", "transparent")
         .style("cursor", "crosshair")
         .call(d3.drag()
@@ -108,7 +108,7 @@ export default function Slider(cont, store) {
         .enter().append("text")
         .attr("x", d3x)
         .attr("text-anchor", "middle")
-        .attr("font-size", "16px")
+        .attr("font-size", "11px")
         .style("fill", "grey")
         .text(function (d) {
           return d
@@ -118,7 +118,7 @@ export default function Slider(cont, store) {
         .attr("class", "handle")
         .attr("y1", -dim.height / 2)
         .attr("y2", dim.height / 2)
-        .attr("stroke-width", 60)
+        .attr("stroke-width", 35)
         .attr("stroke", "rgba(0,0,0,.2)")
         .style("opacity", 0)
     }

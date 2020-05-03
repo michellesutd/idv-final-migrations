@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Migrations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.12.0/d3.js"></script>
@@ -12,28 +14,48 @@
     html {
       font-family: sans-serif;
     }
+
     #app {
       width: 900px;
       max-width: 100%;
-      margin: auto;
+      margin: 40px auto;
     }
-    h4 {
+
+    #intro {
       position: absolute;
       z-index: 2;
     }
+
+    h4 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      color: #F25044;
+    }
+
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #676161;
+      position: relative;
+      margin: -18px auto;
+    }
+
     #map_cont {
       width: 100%;
-      height: 500px;
+      height: 550px;
     }
+
     #otherCharts {
-      margin-top: -100px;
-      margin-left: 30%;
-      width: 55%;
+      margin-top: -20px;
+      margin-left: 60%;
+      width: 45%;
     }
+
     .areaChart {
       width: 100%;
-      height: 90px;
+      height: 70px;
     }
+
     #slider_cont {
       width: 100%;
       height: 25px;
@@ -41,10 +63,12 @@
       position: relative;
       z-index: 1
     }
+
     #data_source {
       font-size: 9px;
       margin-top: -35px
     }
+
     @media (max-width: 1200px) {}
 
     @media (max-width: 992px) {}
@@ -73,10 +97,19 @@
     }
   </style>
 </head>
+
 <body>
 <div id="app">
   <button id="replay_animation">Play</button>
-  <h4>Migration to Europe</h4>
+  <div id="intro"> 
+    <h4>MIGRATION TO EUROPE</h4>
+    <p>Are Africans over-represented in the media   
+    </br> when discussing about the migrant crisis? 
+    </br> We look at the data and compare the number of
+    </br> migrants internationally with those from Africa.
+    </p>
+  </div>
+  
   <div id="map_cont"></div>
   <div id="otherCharts">
     <div id="area_cont_up" class="areaChart"></div>

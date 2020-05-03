@@ -33,14 +33,14 @@ Render.drawLinks = function (links, ctx, projection, style) {
     if (drawn_places.some(d1 => isNear(d1, d))) return
     drawn_places.push(d)
     ctx.textAlign = d.coor[0] > 0 && d.place !== "New Zealand" ? "start" : "end";
-    ctx.font = 10+'px sans-serif';
+    ctx.font = 9+'px sans-serif';
 
     ctx.lineWidth = 2;
     ctx.setLineDash([]);
     ctx.strokeStyle = "white";
     ctx.strokeText(d.place, ...projection(d.coor));
 
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "#3A3D47";
     ctx.fillText(d.place, ...projection(d.coor));
   }
 
@@ -77,7 +77,7 @@ Render.drawDottedMapBg = function (geojson, ctx, projection, dim) {
     }
 
     function drawCircle() {
-      ctx.fillStyle = "lightgrey";
+      ctx.fillStyle = "#B8D8D6";
       ctx.beginPath();
       ctx.arc(x, y, r, 0, 2 * Math.PI);
       ctx.fill();
