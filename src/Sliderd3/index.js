@@ -109,17 +109,19 @@ export default function Slider(cont, store) {
         .attr("x", d3x)
         .attr("text-anchor", "middle")
         .attr("font-size", "11px")
-        .style("fill", "grey")
+        .attr("font-family", "Open Sans")
+        .attr("color", "#676161")
+        .attr("opacity", "0.5")
         .text(function (d) {
           return d
         });
   
-      var handle = slider.insert("line", ".track-overlay")
+        var handle = slider.insert("line", ".track-overlay")
         .attr("class", "handle")
-        .attr("y1", -dim.height / 2)
+        .attr("y1", -dim.height / 5)
         .attr("y2", dim.height / 2)
         .attr("stroke-width", 35)
-        .attr("stroke", "rgba(0,0,0,.2)")
+        .attr("stroke", "rgba(25,112,132,.2)")
         .style("opacity", 0)
     }
     

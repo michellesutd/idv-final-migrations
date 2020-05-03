@@ -46,7 +46,7 @@ function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style, mouseOverLin
     main_g.append("path")
       .attr("class", "line")
       .style("fill", "none")
-      .style("stroke-width", 2)
+      .style("stroke-width", 1)
       .style("stroke", style.color)
       .attr("d", line(data));
 
@@ -78,11 +78,9 @@ function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style, mouseOverLin
         .attr("x2", d3x(xValue(d)))
         .attr("y1", d3y.range()[0])
         .attr("y2", d3y(yValue(d)))
-        .attr("stroke-width", 2)
+        .attr("stroke-width", 1)
         .style("stroke", style.color)
-
     })
-
   }
 
   function drawAxis() {
@@ -91,7 +89,11 @@ function draw(data, cont, dim, [d3x, d3y], [xValue, yValue], style, mouseOverLin
     axis_g.append("g")
       .attr("class", "axis axis--y")
       .attr("transform", "translate(" + (dim.ml + dim.width) + "," + dim.mt + ")")
-      .call(d3.axisRight(d3y).tickFormat(n => numberFormat(n, 2)).ticks(4));
+      .attr("color", "#676161")
+      .attr("opacity", .8)
+      .attr("font-family", "Open Sans")
+      
+      .call(d3.axisRight(d3y).tickFormat(n => numberFormat(n, 2)).ticks(3));
     axis_g.select(".axis--y .domain").style("opacity", 0)
 
     function numberFormat(n,d){let x=(''+n).length,p=Math.pow;d=p(10,d);x-=x%3;return Math.round(n*d/p(10,x))/d+" kMBTPE"[x/3]}

@@ -96,23 +96,25 @@ Dom.setupLegend = function (data, year, svg, dim, colors, mouseOverLinkF) {
   data_arr.forEach((d, i) => {
     const y = dim.height - 12 - 12*i,
       x = 10,
-      w = 30,
+      w = 25,
       h = 9
     const rect = g.appendChild(document.createElementNS("http://www.w3.org/2000/svg","rect"))
     rect.setAttribute("x", x)
-    rect.setAttribute("y", y)
+    rect.setAttribute("y", y-2)
     rect.setAttribute("width", w)
     rect.setAttribute("height", h)
     rect.setAttribute("fill", colors[d.cat])
+    rect.setAttribute("opacity", 0.8)
 
     rect.addEventListener("mouseover", function () {mouseOverLinkF(d.cat);})
     rect.addEventListener("mouseout", function () {mouseOverLinkF(null);})
 
     const text = g.appendChild(document.createElementNS("http://www.w3.org/2000/svg","text"))
-    text.setAttribute("x", x+w+3)
-    text.setAttribute("y", y+h)
-    text.setAttribute("fill", "black")
+    text.setAttribute("x", x+w+9)
+    text.setAttribute("y", y-2+h)
+    text.setAttribute("fill", "#676161")
     text.setAttribute("font-size", h)
+    text.setAttribute("font-family", "Open Sans")
     text.innerHTML = d.label
   })
 
